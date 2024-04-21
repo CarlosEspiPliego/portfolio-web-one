@@ -1,0 +1,61 @@
+/* Archivo para establecer los colores globales de la app */
+
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+/*
+        Purple: hsl(250, 66%, 75%)
+        Blue: hsl(207, 90%, 72%)
+        Pink: hsl(356, 66%, 75%)
+        Teal: hsl(174, 63%, 62%)
+  */
+:root {
+    --first-hue: 185;
+    --sat: 100%;
+    --lig: 50%;
+    --second-hue: 230;
+
+    --primary-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --primary-color-hover: hsl(var(--first-hue), 84%, 45%);
+    --primary-color-active: hsl(var(--first-hue), 84%, 40%);
+
+    --title-color: hsl(var(--second-hue), 13%, 90%);
+    --text-color: hsl(var(--second-hue), 25%, 85%);
+    --text-color-light: hsl(var(--second-hue), 25%, 40%);
+
+    --text-color-btn: hsl(var(--second-hue), 68%, 8%);
+
+    --body-color: hsl(var(--second-hue), 94%, 6%);
+    --container-color: hsl(var(--second-hue), 70%, 9%);
+    --container-color-light: hsl(var(--second-hue), 62%, 10%);
+
+    --line-color: hsl(var(--second-hue), 64%, 18%);
+    --border-container-color: hsl(var(--second-hue), 55%, 20%);
+    --border-container-light-color: hsl(var(--second-hue), 55%, 25%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'JetBrains Mono', sans-serif;
+    --biggest-font-size: 2.5rem; /* 40px */
+    --h1-font-size: 2.25rem; /* 36px */
+    --h2-font-size: 1.5rem; /* 24px */
+    --h3-font-size: 1.25rem; /* 20px */
+    --normal-font-size: 1rem; /* 16px */
+    --small-font-size: .875rem; /* 14px */
+    --smaller-font-size: .75rem; /* 12px */
+    --tiny-font-size: .625rem;  /* 10px */
+}
+
+/* Query de variables para mobile  */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    :root {
+        --biggest-font-size: 1.5rem; /* 24px */
+        --h1-font-size: 1.25rem; /* 20px */
+        --h2-font-size: 1.125rem; /* 18px */
+        --h3-font-size: 1rem; /* 16px */
+        --normal-font-size: .875rem; /* 14px */
+        --small-font-size: .813rem; /* 13px */
+        --smaller-font-size: .75rem; /* 12px */
+        --tiny-font-size: .625rem;  /* 10px */
+    }
+}
