@@ -3,7 +3,7 @@
 /* Definiciones para los estilos thin */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-Thin.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
 }
@@ -11,7 +11,7 @@
 /* Definiciones para los estilos light */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-Light.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
@@ -19,7 +19,7 @@
 /* Definiciones para los estilos normales */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,7 +27,7 @@
 /* Definiciones para los estilos Medium */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-Medium.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
@@ -35,7 +35,7 @@
 /* Definiciones para los estilos Bold */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -43,7 +43,7 @@
 /* Definiciones para los estilos ExtraBold */
 @font-face {
     font-family: 'JetBrains Mono';
-    src: url('../../fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    src: url('../../assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }
