@@ -22,7 +22,26 @@
 
 <body id="home">
   <span class="gradient__header"></span>
-  <div class="container__main">
+
+  <main class="container__main">
+    <!-- NAVEGACIÓN LATERAL CUANDO SE HAGA SCROLL -->
+    <nav class="sidebar">
+      <span class="line__sidebar"></span>
+
+      <!-- cirulos botones para navegar -->
+      <div class="container__links">
+        <a onclick="activeSideBtn('home__side-btn')" href="#home" class="sidebar__btns active__btn-sidebar" id="home__side-btn"></a>
+        <a onclick="activeSideBtn('sobre__side-btn')" href="#sobre" class="sidebar__btns" id="sobre__side-btn"></a>
+        <a onclick="activeSideBtn('hobbies__side-btn')" href="#hobbies" class="sidebar__btns" id="hobbies__side-btn"></a>
+        <a onclick="activeSideBtn('formacion__side-btn')" href="#formacion" class="sidebar__btns" id="formacion__side-btn"></a>
+        <a onclick="activeSideBtn('skills__side-btn')" href="#skills" class="sidebar__btns" id="skills__side-btn"></a>
+        <a onclick="activeSideBtn('contacto__side-btn')" href="#contacto" class="sidebar__btns" id="contacto__side-btn"></a>
+
+
+      </div>
+
+
+    </nav>
 
 
     <!-- NAVBAR SECTION -->
@@ -30,7 +49,7 @@
       <div class="navbar__container container">
         <ul class="navbar__menu">
           <li class="navbar__menu-item">
-            <a href="#sobre" class="navbar__menu-link">Sobre mí</a>
+            <a href="#sobre" class="navbar__menu-link">Sobre mi</a>
           </li>
           <li class="navbar__menu-item">
             <a href="#formacion" class="navbar__menu-link">Formación</a>
@@ -117,11 +136,9 @@
     <div class="about__section" id="sobre">
       <span class="about__line-h"></span>
       <div class="container about__container">
-        <h2 class="about__title font-xl">
-          <span class="about__title-icon">
-            <i class="ti ti-user"></i>
-          </span>
-          Sobre mí
+        <h2 class="about__title font-xl container__title-section">
+          <span class="title__shadow">Sobre mi</span>
+          Sobre mi
         </h2>
 
         <div class="about__description-container">
@@ -163,10 +180,8 @@
     <!-- INTERESES SECTION -->
     <div class="intereses__section" id="hobbies">
       <div class="container intereses__container">
-        <h2 class="intereses__title font-xl">
-          <span class="intereses__title-icon">
-            <i class="ti ti-ball-volleyball"></i>
-          </span>
+        <h2 class="container__title-section font-xl">
+          <span class="title__shadow">Mis hobbies</span>
           Mis Hobbies
         </h2>
 
@@ -217,10 +232,8 @@
     <!-- FORMACIÓN ACADÉMICA SECTION -->
     <div class="formacion__section" id="formacion">
       <div class="container formacion__section-container">
-        <h2 class="formacion__title font-xl">
-          <span class="formacion__title-icon">
-            <i class="ti ti-school"></i>
-          </span>
+        <h2 class="formacion__title font-xl container__title-section">
+          <span class="title__shadow">Mi Formación Académica</span>
           Mi Formación Académica
         </h2>
         <div class="formacion__content">
@@ -256,14 +269,13 @@
           </span>
 
           <div class="formacion__section-right">
-
             <div class="formacion__container-utez">
               <span class="formacion__line-utez"></span>
               <span class="formacion__circle-utez"></span>
 
               <div class="formacion__card-utez">
                 <b class="formacion__card-title">TSU en Desarrollo de Software multiplataforma</b>
-                <span class="formacion__card-subtitle">Universidad Tecnológica de Emiliano Zapata</>
+                <span class="formacion__card-subtitle">Universidad Tecnológica de Emiliano Zapata</sp>
                   <p class="formacion__card-year">2020 - 2022</p>
                   <p class="formacion__card-description font-sm">🎓 Mi formación me proporcionó bases para el desarrollo
                     de aplicaciones multiplataforma. A través de proyectos integradores, trabajé en conjunto con
@@ -277,211 +289,261 @@
 
         </div>
 
-
       </div>
 
     </div>
 
     <!-- SKILLS SECTION -->
     <div class="skills__section" id="skills">
-      <div class="container">
 
-        <div class="skills__container">
-          <div class="container__title-skill">
-            <span class="skills__shadow">Skills</span>
-            <h2 class="skills__title font-xl">Skills</h2>
-          </div>
+      <div class="skills__container container">
+        <div class="container__title-skill">
+          <span class="skills__shadow">Skills</span>
+          <h2 class="skills__title font-xl">Skills</h2>
+        </div>
 
-          <div class="container__content">
-            <!-- Lenguajes -->
-            <div class="container__lenguajes container__section-cards">
-              <h3 class="container__lenguajes-title font-lg">Lenguajes</h3>
-              <span class="container__title-line"></span>
+        <div class="container__content">
+          <!-- Lenguajes -->
+          <div class="container__lenguajes container__section-cards">
+            <h3 class="container__lenguajes-title font-lg">Lenguajes</h3>
+            <span class="container__title-line"></span>
 
-              <div class="content__cards">
-                <!-- Java -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-java.svg" alt="Java" class="skills__card-icon" />
-                  <p class="skills__card-text">Java</p>
-                </div>
-                <!-- php -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-php.svg" alt="PHP" class="skills__card-icon" />
-                  <p class="skills__card-text">PHP</p>
-                </div>
-                <!-- Javascript -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-javascript.svg" alt="Javascript" class="skills__card-icon" />
-                  <p class="skills__card-text">Javascript</p>
-                </div>
+            <div class="content__cards">
+              <!-- Java -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-java.svg" alt="Java" class="skills__card-icon" />
+                <p class="skills__card-text">Java</p>
               </div>
-            </div>
-
-            <!-- Frameworks -->
-            <div class="container__frameworks container__section-cards">
-              <h3 class="container__frameworks-title font-lg">Frameworks / librerías</h3>
-              <span class="container__title-line"></span>
-
-              <div class="content__cards">
-                <!-- React js -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-react.svg" alt="ReactJS" class="skills__card-icon" />
-                  <p class="skills__card-text">React JS</p>
-                </div>
-
-                <!-- React native -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-react.svg" alt="React Native" class="skills__card-icon" />
-                  <p class="skills__card-text">React Native</p>
-                </div>
-
-                <!-- Spring boot-->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-spring-boot.svg" alt="Spring Boot" class="skills__card-icon" />
-                  <p class="skills__card-text">Spring Boot</p>
-                </div>
+              <!-- php -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-php.svg" alt="PHP" class="skills__card-icon" />
+                <p class="skills__card-text">PHP</p>
+              </div>
+              <!-- Javascript -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-javascript.svg" alt="Javascript" class="skills__card-icon" />
+                <p class="skills__card-text">Javascript</p>
               </div>
             </div>
           </div>
 
-          <div class="container__content">
+          <!-- Frameworks -->
+          <div class="container__frameworks container__section-cards">
+            <h3 class="container__frameworks-title font-lg">Frameworks / librerías</h3>
+            <span class="container__title-line"></span>
 
-            <!-- Bases de datos -->
-            <div class="container__bases-datos container__section-cards">
-              <h3 class="container__bases-datos-title font-lg">Bases de datos</h3>
-              <span class="container__title-line"></span>
+            <div class="content__cards">
+              <!-- React js -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-react.svg" alt="ReactJS" class="skills__card-icon" />
+                <p class="skills__card-text">React JS</p>
+              </div>
 
-              <div class="content__cards">
-                <!-- MySql -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-mysql.svg" alt="MySql" class="skills__card-icon" />
-                  <p class="skills__card-text">MySql</p>
-                </div>
+              <!-- React native -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-react.svg" alt="React Native" class="skills__card-icon" />
+                <p class="skills__card-text">React Native</p>
+              </div>
 
-                <!-- Mongo db -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-mongodb.svg" alt="MongoDB" class="skills__card-icon" />
-                  <p class="skills__card-text">MongoDB</p>
-                </div>
+              <!-- Spring boot-->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-spring-boot.svg" alt="Spring Boot" class="skills__card-icon" />
+                <p class="skills__card-text">Spring Boot</p>
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Diseño -->
-            <div class="container__disenio container__section-cards">
-              <h3 class="container__disenio-title font-lg">Diseño</h3>
-              <span class="container__title-line"></span>
+        <div class="container__content">
 
-              <div class="content__cards">
-                <!-- Figma -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-figma.svg" alt="Figma" class="skills__card-icon" />
-                  <p class="skills__card-text">Figma</p>
-                </div>
+          <!-- Bases de datos -->
+          <div class="container__bases-datos container__section-cards">
+            <h3 class="container__bases-datos-title font-lg">Bases de datos</h3>
+            <span class="container__title-line"></span>
 
-                <!-- Illustrator -->
-                <div class="skills__card">
-                  <img src="./assets/icons/illustrator.svg" alt="Illustrator" class="skills__card-icon" />
-                  <p class="skills__card-text">Illustrator</p>
-                </div>
+            <div class="content__cards">
+              <!-- MySql -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-mysql.svg" alt="MySql" class="skills__card-icon" />
+                <p class="skills__card-text">MySql</p>
+              </div>
 
-                <!-- Photoshop -->
-                <div class="skills__card">
-                  <img src="./assets/icons/photoshop.svg" alt="Photoshop" class="skills__card-icon" />
-                  <p class="skills__card-text">Photoshop</p>
-                </div>
+              <!-- Mongo db -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-mongodb.svg" alt="MongoDB" class="skills__card-icon" />
+                <p class="skills__card-text">MongoDB</p>
               </div>
             </div>
-
           </div>
 
-          <div class="container__content">
+          <!-- Diseño -->
+          <div class="container__disenio container__section-cards">
+            <h3 class="container__disenio-title font-lg">Diseño</h3>
+            <span class="container__title-line"></span>
 
-            <!-- Marcado y estilos -->
-            <div class="container__marcado container__section-cards">
-              <h3 class="container__marcado-title font-lg">Marcado y Estilos</h3>
-              <span class="container__title-line"></span>
+            <div class="content__cards">
+              <!-- Figma -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-figma.svg" alt="Figma" class="skills__card-icon" />
+                <p class="skills__card-text">Figma</p>
+              </div>
 
-              <div class="content__cards">
-                <!-- Html -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-html5.svg" alt="Html" class="skills__card-icon" />
-                  <p class="skills__card-text">Html</p>
-                </div>
+              <!-- Illustrator -->
+              <div class="skills__card">
+                <img src="./assets/icons/illustrator.svg" alt="Illustrator" class="skills__card-icon" />
+                <p class="skills__card-text">Illustrator</p>
+              </div>
 
-                <!-- css -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-css3.svg" alt="Css" class="skills__card-icon" />
-                  <p class="skills__card-text">Css</p>
-                </div>
-
-                <!-- sass -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-sass.svg" alt="Sass" class="skills__card-icon" />
-                  <p class="skills__card-text">Sass</p>
-                </div>
-
-                <!-- bootstrap -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-bootstrap.svg" alt="Bootstrap" class="skills__card-icon" />
-                  <p class="skills__card-text">Bootstrap</p>
-                </div>
-
-                <!-- Next UI -->
-                <div class="skills__card">
-                  <img src="./assets/icons/nextui.svg" alt="Next UI" class="skills__card-icon" />
-                  <p class="skills__card-text">Next UI</p>
-                </div>
-
+              <!-- Photoshop -->
+              <div class="skills__card">
+                <img src="./assets/icons/photoshop.svg" alt="Photoshop" class="skills__card-icon" />
+                <p class="skills__card-text">Photoshop</p>
               </div>
             </div>
-
-            <!-- Otros -->
-            <div class="container__otros container__section-cards">
-              <h3 class="container__otros-title font-lg">Otros</h3>
-              <span class="container__title-line"></span>
-
-              <div class="content__cards">
-                <!-- paquetería office -->
-                <div class="skills__card">
-                  <img src="./assets/icons/office.svg" alt="Office" class="skills__card-icon" />
-                  <p class="skills__card-text">Paquetería Office</p>
-                </div>
-
-                <!-- Git -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-git.svg" alt="Git" class="skills__card-icon" />
-                  <p class="skills__card-text">Git</p>
-                </div>
-
-                <!-- Github -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-github.svg" alt="Github" class="skills__card-icon" />
-                  <p class="skills__card-text">Github</p>
-                </div>
-
-                <!-- Gitlab -->
-                <div class="skills__card">
-                  <img src="./assets/icons/bxl-gitlab.svg" alt="Gitlab" class="skills__card-icon" />
-                  <p class="skills__card-text">Gitlab</p>
-                </div>
-
-                <!-- Jira -->
-                <div class="skills__card">
-                  <img src="./assets/icons/jira.svg" alt="Jira" class="skills__card-icon" />
-                  <p class="skills__card-text">Jira Software</p>
-                </div>
-
-              </div>
-            </div>
-
           </div>
 
         </div>
+
+        <div class="container__content">
+
+          <!-- Marcado y estilos -->
+          <div class="container__marcado container__section-cards">
+            <h3 class="container__marcado-title font-lg">Marcado y Estilos</h3>
+            <span class="container__title-line"></span>
+
+            <div class="content__cards">
+              <!-- Html -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-html5.svg" alt="Html" class="skills__card-icon" />
+                <p class="skills__card-text">Html</p>
+              </div>
+
+              <!-- css -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-css3.svg" alt="Css" class="skills__card-icon" />
+                <p class="skills__card-text">Css</p>
+              </div>
+
+              <!-- sass -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-sass.svg" alt="Sass" class="skills__card-icon" />
+                <p class="skills__card-text">Sass</p>
+              </div>
+
+              <!-- bootstrap -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-bootstrap.svg" alt="Bootstrap" class="skills__card-icon" />
+                <p class="skills__card-text">Bootstrap</p>
+              </div>
+
+              <!-- Next UI -->
+              <div class="skills__card">
+                <img src="./assets/icons/nextui.svg" alt="Next UI" class="skills__card-icon" />
+                <p class="skills__card-text">Next UI</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Otros -->
+          <div class="container__otros container__section-cards">
+            <h3 class="container__otros-title font-lg">Otros</h3>
+            <span class="container__title-line"></span>
+
+            <div class="content__cards">
+              <!-- paquetería office -->
+              <div class="skills__card">
+                <img src="./assets/icons/office.svg" alt="Office" class="skills__card-icon" />
+                <p class="skills__card-text">Paquetería Office</p>
+              </div>
+
+              <!-- Git -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-git.svg" alt="Git" class="skills__card-icon" />
+                <p class="skills__card-text">Git</p>
+              </div>
+
+              <!-- Github -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-github.svg" alt="Github" class="skills__card-icon" />
+                <p class="skills__card-text">Github</p>
+              </div>
+
+              <!-- Gitlab -->
+              <div class="skills__card">
+                <img src="./assets/icons/bxl-gitlab.svg" alt="Gitlab" class="skills__card-icon" />
+                <p class="skills__card-text">Gitlab</p>
+              </div>
+
+              <!-- Jira -->
+              <div class="skills__card">
+                <img src="./assets/icons/jira.svg" alt="Jira" class="skills__card-icon" />
+                <p class="skills__card-text">Jira Software</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
 
+
     </div>
-  </div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <div class="contacto__section" id="contacto">
+      <div class="container container__contact-form">
+        <div class="contacto__container-left">
+          <h2 class="contacto__title font-xl">
+            Contáctame
+          </h2>
+          <p class="contacto__description">
+            Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje
+            a través del siguiente formulario o a través de mis redes sociales y
+            responderé lo más pronto posible :)
+          </p>
+          <div class="contacto__info-container">
+            <!-- Se pondrá el correo con su icono, el celular y la ubicacion -->
+            <div class="contacto__email-container">
+              <i class="ti ti-mail contacto__email-icon"></i>
+              <p class="email__txt">carlospliego226@gmail.com</p>
+            </div>
+            <div class="contacto__phone-container">
+              <i class="ti ti-brand-whatsapp contacto__phone-icon"></i>
+              <p class="phone__txt">(+52) 442 123 4567</p>
+            </div>
+            <div class="contacto__location-container">
+              <i class="ti ti-map-pin contacto__location-icon"></i>
+              <p class="location__txt">Querétaro, México</p>
+            </div>
+          </div>
+
+        </div>
+
+        <span class="contacto__line"></span>
+
+        <div class="contacto__container-right">
+          <form action="https://formspree.io/f/moqyqzqz" method="POST" class="contacto__form-container">
+            <div class="contacto__form-group-name">
+              <!-- <label for="nombre" class="contacto__form-label">Nombre</label> -->
+              <input type="email" placeholder="Email" name="email" id="email" class="contacto__form-input" required />
+              <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="contacto__form-input" required />
+            </div>
+            <div class="contacto__form-grout-asunto">
+              <input type="text" placeholder="Asunto" name="asunto" id="asunto" class="contacto__form-input" required />
+            </div>
+            <div class="contacto__form-group-mensaje">
+              <textarea name="mensaje" placeholder="Mensaje" id="mensaje" class="contacto__form-textarea"
+                required></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
 
   <!-- FOOTER  -->
   <footer class="footer">
@@ -499,7 +561,7 @@
 
       <div class="footer__container-content">
         <div class="footer__container-links">
-          <a href="#sobre" class="footer__container-links-link">Sobre mí</a>
+          <a href="#sobre" class="footer__container-links-link">Sobre mi</a>
           <span>/</span>
           <a href="#formacion" class="footer__container-links-link">Formación</a>
           <span>/</span>
@@ -532,7 +594,6 @@
 
     <span class="gradient__footer"></span>
   </footer>
-  </div>
 
   <!-- <script src="./scripts/index.js"></script> -->
   <script src="./scripts/skills.js"></script>

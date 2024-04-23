@@ -4,7 +4,12 @@
 @import url('./contacto.css');
 @import url('./footer.css');
 @import url('./skills.css');
+@import url('./sidebar.css');
 
+.container__main {
+    position: relative;
+    /* background-color: rgba(240, 248, 255, 0.081); */
+}
 
 /* ABOUT SECTION */
 .about__section {
@@ -82,21 +87,41 @@
     gap: 2rem;
 }
 
+.container__title-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__shadow {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: hsla(var(--second-hue), 13%, 40%, .1);
+    position: absolute;
+    display: flex;
+}
+
 .intereses__body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-
 }
 
 .intereses__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
+    width: 80%;
     flex-direction: column;
     padding: 1rem;
     cursor: pointer;
+    border-radius: .5rem;
+    background: linear-gradient(135deg, rgba(1, 6, 31, 0.40) 0.94%, rgba(25, 46, 141, 0.076) 95%);
+    border: 1px solid var(--border-container-color);
+    transition: all .2s ease-in-out;
 }
 
 .intereses__card:hover {
@@ -236,13 +261,13 @@
     align-items: end;
     width: 50%;
     height: 100%;
+    position: relative;
 }
 
 .formacion__container-utez {
     display: flex;
     justify-content: end;
     position: relative;
-    /* background-color: rgba(240, 248, 255, 0.197); */
 }
 
 .formacion__line-utez {

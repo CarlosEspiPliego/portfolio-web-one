@@ -1,9 +1,11 @@
 .skills__section {
-    height: 110vh;
-    /* background-color: rgba(240, 248, 255, 0.052); */
+    height: 100vh;
+    /* background-color: rgba(240, 248, 255, 0.471); */
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
 }
+
 
 .container__title-skill {
     width: 100%;

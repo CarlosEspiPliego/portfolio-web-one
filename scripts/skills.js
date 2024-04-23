@@ -1,16 +1,35 @@
-const showContent = (content) => {
-    // alert(content);
-    // Lista de todos los ids de sección
-    var sections = ['lenguajes', 'frameworks', 'bases-datos', 'marcado', 'disenio', 'otros'];
-    var buttons = ['btn__txt-lenguajes', 'btn__txt-frameworks', 'btn__txt-bases-datos', 'btn__txt-marcado', 'btn__txt-disenio', 'btn__txt-otros']
-
+const activeSideBtn = (content) => {
+    var sections = ['home__side-btn', 'sobre__side-btn', 'hobbies__side-btn', 'formacion__side-btn', 'skills__side-btn', 'contacto__side-btn'];
+    
     // Ocultar todas las secciones
-    sections.forEach(function (section, index) {
-        document.getElementById(section).style.display = 'none';
-        document.getElementById(buttons[index]).classList.remove('active__btn-skills');
+    sections.forEach(function (section) {
+        document.getElementById(section).classList.remove('active__btn-sidebar');
     });
 
-    // Mostrar la sección clickeada
-    document.getElementById(content).style.display = 'grid';
-    document.getElementById('btn__txt-' + content).classList.add('active__btn-skills');
+    document.getElementById( content ).classList.add('active__btn-sidebar');
 }
+
+// Detectar las secciones con el scroll
+window.addEventListener('scroll', function () {
+    var scroll = this.scrollY;
+    var home = document.getElementById('home').offsetTop;
+    var sobre = document.getElementById('sobre').offsetTop;
+    var hobbies = document.getElementById('hobbies').offsetTop;
+    var formacion = document.getElementById('formacion').offsetTop;
+    var skills = document.getElementById('skills').offsetTop;
+    var contacto = document.getElementById('contacto').offsetTop;
+
+    if (scroll >= home && scroll < sobre) {
+        activeSideBtn('home__side-btn');
+    } else if (scroll >= sobre && scroll < hobbies) {
+        activeSideBtn('sobre__side-btn');
+    } else if (scroll >= hobbies && scroll < formacion) {
+        activeSideBtn('hobbies__side-btn');
+    } else if (scroll >= formacion && scroll < skills) {
+        activeSideBtn('formacion__side-btn');
+    } else if (scroll >= skills && scroll < contacto) {
+        activeSideBtn('skills__side-btn');
+    } else if (scroll >= contacto) {
+        activeSideBtn('contacto__side-btn');
+    }
+})
