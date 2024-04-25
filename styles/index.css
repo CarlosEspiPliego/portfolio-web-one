@@ -5,6 +5,7 @@
 @import url('./footer.css');
 @import url('./skills.css');
 @import url('./sidebar.css');
+@import url('./projects.css');
 
 .container__main {
     position: relative;
