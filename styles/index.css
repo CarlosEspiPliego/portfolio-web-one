@@ -171,10 +171,12 @@
 }
 
 .container__txt-formacion {
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     padding: .5rem 1rem;
     position: absolute;
     transform: translateX(-50%);
+    border-radius: .3rem;
+    border: 1px solid var(--border-container-color);
 }
 
 .container__txt-continuara {
