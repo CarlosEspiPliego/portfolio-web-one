@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Web - Charlie Espipliego" />
+    <meta name="keywords" content="Portfolio, Web, Charlie Espipliego" />
+    <meta name="author" content="Charlie Espipliego" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio Web - Charlie Espipliego" />
-  <meta name="keywords" content="Portfolio, Web, Charlie Espipliego" />
-  <meta name="author" content="Charlie Espipliego" />
+    <link rel="stylesheet" href="./styles/global/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
-  <link rel="stylesheet" href="./styles/global/normalize.css" />
-  <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
 
-  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <title>Portfolio Web - Charlie Espipliego</title>
+  </head>
 
-  <title>Portfolio Web - Charlie Espipliego</title>
-</head>
-
-<body id="home">
-  <span class="gradient__header"></span>
-
-  <main class="container__main">
-    <!-- NAVEGACIÓN LATERAL CUANDO SE HAGA SCROLL -->
-    <nav class="sidebar">
-      <span class="line__sidebar"></span>
-
-      <!-- cirulos botones para navegar -->
-      <div class="container__links">
-        <a onclick="activeSideBtn('home__side-btn')" href="#home" class="sidebar__btns active__btn-sidebar"
-          id="home__side-btn"></a>
-        <a onclick="activeSideBtn('sobre__side-btn')" href="#sobre" class="sidebar__btns" id="sobre__side-btn"></a>
-        <a onclick="activeSideBtn('hobbies__side-btn')" href="#hobbies" class="sidebar__btns"
-          id="hobbies__side-btn"></a>
-        <a onclick="activeSideBtn('formacion__side-btn')" href="#formacion" class="sidebar__btns"
-          id="formacion__side-btn"></a>
-        <a onclick="activeSideBtn('skills__side-btn')" href="#skills" class="sidebar__btns" id="skills__side-btn"></a>
-        <a onclick="activeSideBtn('projects__side-btn')" href="#projects" class="sidebar__btns"
-          id="projects__side-btn"></a>
-        <a onclick="activeSideBtn('contacto__side-btn')" href="#contacto" class="sidebar__btns"
-          id="contacto__side-btn"></a>
-      </div>
-    </nav>
+  <body id="home">
+    <span class="gradient__header"></span>
 
     <!-- NAVBAR SECTION -->
     <nav class="navbar animate__animated animate__backInRight">
@@ -59,8 +42,12 @@
             <a href="#skills" class="navbar__menu-link">Skills</a>
           </li>
           <div class="navbar__logo">
-            <a href="#home" class="navbar__logo-link ">
-              <img src="./assets/img/LogoCarlosSL.png" alt="Charlie Espipliego" class="navbar__logo-img" />
+            <a href="#home" class="navbar__logo-link">
+              <img
+                src="./assets/img/LogoCarlosSL.png"
+                alt="Charlie Espipliego"
+                class="navbar__logo-img"
+              />
             </a>
           </div>
           <li class="navbar__menu-item">
@@ -76,821 +63,1227 @@
       </div>
     </nav>
 
-    <!-- HEADER SECTION -->
-    <div class="header animate__animated animate__backInLeft">
-      <div class="container header__container">
-        <div class="header__container-title">
-          <div>
-            <h1 class="header__title-text font-xl">
-              ¡Hola! soy Carlos Espinoza
-            </h1>
-            <h2 class="header__subtitle-text">Desarrollador Web Frontend</h2>
-          </div>
-          <p class="header__introduction-text">
-            Actualmente participando en el proyecto Oracle One Education + Alura
-            Latam
-          </p>
-          <div class="header__container-btns">
-            <!-- Botones para descargar cv y redirigir a la seccion #contacto -->
-            <a href="/assets/docs/CV-CarlosEspinoza.pdf" target="_blank" class="btn btn-outline btn-lg">Descargar CV</a>
-            <a href="#contacto" class="btn btn-lg">Contáctame</a>
-          </div>
-        </div>
+    <nav class="navbar-mobile">
+      
+    </nav>
 
-        <div class="header__img">
-          <div class="header__img-container">
-            <img src="./assets/img/profile.png" alt="Foto de carlos Espipliego" class="header__img-img" />
-          </div>
-        </div>
+    <main class="container__main">
+      <!-- NAVEGACIÓN LATERAL CUANDO SE HAGA SCROLL -->
+      <nav class="sidebar">
+        <span class="line__sidebar"></span>
 
-        <div class="header__socials">
-          <span class="linea"></span>
-          <div class="socials__container">
-            <ul class="socials__btns">
-              <li class="socials__btns-item">
-                <a href="https://www.linkedin.com/in/carlos-espipliego" target="_blank" class="socials__btns-link">
-                  <img class="icons__socials" src="./assets/icons/icon-linkedin.svg" alt="Linkedin" />
-                </a>
-              </li>
-              <li class="socials__btns-item">
-                <a href="https://github.com/GalaxyPliego" target="_blank" class="socials__btns-link">
-                  <img class="icons__socials" src="./assets/icons/icon-github.svg" alt="GitHub" />
-                </a>
-              </li>
-              <li class="socials__btns-item">
-                <a href="https://www.facebook.com/espipliego/" target="_blank" class="socials__btns-link">
-                  <img class="icons__socials" src="./assets/icons/icon-facebook.svg" alt="Facebook" />
-                </a>
-              </li>
-              <li class="socials__btns-item">
-                <a href="https://www.instagram.com/carlos_espipliego/" target="_blank" class="socials__btns-link">
-                  <img class="icons__socials" src="./assets/icons/icon-instagram.svg" alt="Instagram" />
-                </a>
-              </li>
-            </ul>
+        <!-- cirulos botones para navegar -->
+        <div class="container__links">
+          <a
+            onclick="activeSideBtn('home__side-btn')"
+            href="#home"
+            class="sidebar__btns active__btn-sidebar"
+            id="home__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('sobre__side-btn')"
+            href="#sobre"
+            class="sidebar__btns"
+            id="sobre__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('hobbies__side-btn')"
+            href="#hobbies"
+            class="sidebar__btns"
+            id="hobbies__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('formacion__side-btn')"
+            href="#formacion"
+            class="sidebar__btns"
+            id="formacion__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('skills__side-btn')"
+            href="#skills"
+            class="sidebar__btns"
+            id="skills__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('projects__side-btn')"
+            href="#projects"
+            class="sidebar__btns"
+            id="projects__side-btn"
+          ></a>
+          <a
+            onclick="activeSideBtn('contacto__side-btn')"
+            href="#contacto"
+            class="sidebar__btns"
+            id="contacto__side-btn"
+          ></a>
+        </div>
+      </nav>
+
+      <!-- HEADER SECTION -->
+      <div class="header animate__animated animate__backInLeft">
+        <div class="container header__container">
+          <div class="header__info-img">
+            <div class="header__container-title">
+              <div>
+                <p class="header__title-text font-xl">
+                  ¡Hola! soy Carlos Espinoza
+                </p>
+                <h2 class="header__subtitle-text">
+                  Desarrollador Web Frontend
+                </h2>
+              </div>
+              <p class="header__introduction-text">
+                Actualmente participando en el proyecto Oracle One Education +
+                Alura Latam
+              </p>
+              <div class="header__container-btns">
+                <!-- Botones para descargar cv y redirigir a la seccion #contacto -->
+                <a
+                  href="/assets/docs/CV-CarlosEspinoza.pdf"
+                  target="_blank"
+                  class="btn btn-outline btn-lg header__btns"
+                  >Ver CV</a
+                >
+                <a href="#contacto" class="btn btn-lg header__btns">Contáctame</a>
+              </div>
+            </div>
+
+            <div class="header__img">
+              <div class="header__img-container">
+                <img
+                  src="./assets/img/profile.png"
+                  alt="Foto de carlos Espipliego"
+                  class="header__img-img"
+                />
+              </div>
+
+              <div class="socials__container-mobile">
+                <div class="socials__btns-item">
+                  <a
+                    href="https://www.linkedin.com/in/carlos-espipliego"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-linkedin.svg"
+                      alt="Linkedin"
+                    />
+                  </a>
+                </div>
+                <div class="socials__btns-item">
+                  <a
+                    href="https://github.com/GalaxyPliego"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-github.svg"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+                <div class="socials__btns-item">
+                  <a
+                    href="https://www.facebook.com/espipliego/"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-facebook.svg"
+                      alt="Facebook"
+                    />
+                  </a>
+                </div>
+                <div class="socials__btns-item">
+                  <a
+                    href="https://www.instagram.com/carlos_espipliego/"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-instagram.svg"
+                      alt="Instagram"
+                    />
+                  </a>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="header__socials">
+            <span class="linea"></span>
+            <div class="socials__container">
+              <ul class="socials__btns">
+                <li class="socials__btns-item">
+                  <a
+                    href="https://www.linkedin.com/in/carlos-espipliego"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-linkedin.svg"
+                      alt="Linkedin"
+                    />
+                  </a>
+                </li>
+                <li class="socials__btns-item">
+                  <a
+                    href="https://github.com/GalaxyPliego"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-github.svg"
+                      alt="GitHub"
+                    />
+                  </a>
+                </li>
+                <li class="socials__btns-item">
+                  <a
+                    href="https://www.facebook.com/espipliego/"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-facebook.svg"
+                      alt="Facebook"
+                    />
+                  </a>
+                </li>
+                <li class="socials__btns-item">
+                  <a
+                    href="https://www.instagram.com/carlos_espipliego/"
+                    target="_blank"
+                    class="socials__btns-link"
+                  >
+                    <img
+                      class="icons__socials"
+                      src="./assets/icons/icon-instagram.svg"
+                      alt="Instagram"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ABOUT SECTION -->
-    <div class="about__section" id="sobre">
-      <span class="about__line-h"></span>
-      <div class="container about__container">
-        <h2 class="about__title font-xl container__title-section">
-          <span class="title__shadow">Sobre mi</span>
-          Sobre mi
-        </h2>
-
-        <div class="about__description-container">
-          <p class="about__description font-lg">
-            🎓 Estoy en proceso de obtener el grado de
-            <strong>Ing. en Desarrollo y Gestión de Software</strong>, con una
-            formación académica en la
-            <em>Universidad Tecnológica de Querétaro</em> y un título de
-            <em>Técnico Superior Universitario</em> de la
-            <em>Universidad Tecnológica Emiliano Zapata (UTEZ)</em>. Mi
-            formación académica se complementa actualmente con estudios en
-            <strong class="color-primary">Oracle One Education</strong>.
-          </p>
-          <p class="about__description font-lg">
-            🧘 Dedico tiempo a mejorar mi vida personal y espiritual a través
-            del deporte 🏃 y actividades familiares 🏡 e interpersonales,
-            creyendo en el equilibrio entre un estilo de vida saludable 🍏 y una
-            carrera profesional en constante evolución 🚀.
-          </p>
-          <p class="about__description font-lg">
-            🔍 Mi enfoque actual está en expandir mi especialización en el
-            desarrollo <strong>Frontend</strong>, mientras fortalezco mis
-            habilidades de liderazgo 🌟 y colaboración en equipos 🤝. Estoy en
-            busca de oportunidades que me reten y me permitan aportar mi
-            experiencia en la creación de software funcional e intuitivo 💻.
-          </p>
-        </div>
-        <!-- BOTON PARA BAJAR A LA PARTE DE HOBBIES  -->
-        <div class="about__btn-container">
-          <a href="#hobbies" class="btn__hobbies">
-            <i class="ti ti-arrow-down about__btn-icon"></i>
-            Mis Hobbies
-          </a>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- INTERESES SECTION -->
-    <div class="intereses__section" id="hobbies">
-      <div class="container intereses__container">
-        <h2 class="container__title-section font-xl">
-          <span class="title__shadow">Mis hobbies</span>
-          Mis Hobbies
-        </h2>
-
-        <div class="intereses__body">
-          <div class="intereses__card intereses__deporte">
-            <i class="ti ti-ball-volleyball intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Deporte</p>
-          </div>
-
-          <div class="intereses__card intereses__aprender">
-            <i class="ti ti-school intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Aprender</p>
-          </div>
-
-          <div class="intereses__card intereses__leer">
-            <i class="ti ti-book intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Leer</p>
-          </div>
-
-          <div class="intereses__card intereses__viajar">
-            <i class="ti ti-plane intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Viajar</p>
-          </div>
-
-          <div class="intereses__card intereses__compras">
-            <i class="ti ti-shopping-cart intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Compras</p>
-          </div>
-
-          <div class="intereses__card intereses__peliculas">
-            <i class="ti ti-video intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Películas</p>
-          </div>
-
-          <div class="intereses__card intereses__musica">
-            <i class="ti ti-music intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Música</p>
-          </div>
-
-          <div class="intereses__card intereses__juegos">
-            <i class="ti ti-device-gamepad-2 intereses__icons"></i>
-            <p class="intereses__card-text font-lg">Juegos</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FORMACIÓN ACADÉMICA SECTION -->
-    <div class="formacion__section" id="formacion">
-      <div class="container formacion__section-container">
-        <h2 class="formacion__title font-xl container__title-section">
-          <span class="title__shadow">Mi Formación Académica</span>
-          Mi Formación Académica
-        </h2>
-        <div class="formacion__content">
-          <span class="formacion__line-v"></span>
-          <span class="container__txt-continuara container__txt-formacion">
-            <p class="txt__continuara font-lg"> 🚀 Continuará...</p>
-          </span>
-          <span class="container__txt-one container__txt-formacion">
-            <p class="txt__one font-lg">Oracle One Education + Alura Latam 😎</p>
-          </span>
-          <span class="container__txt-udemy container__txt-formacion">
-            <p class="txt__udemy font-lg">😯 Cursos Udemy</p>
-          </span>
-
-          <!-- Izquierda -->
-          <div class="formacion__section-left">
-
-            <div class="formacion__container-uteq">
-
-              <span class="formacion__line-uteq"></span>
-              <span class="formacion__circle-uteq"></span>
-
-              <div class="formacion__card-uteq formacion__cards">
-                <div class="card__inner">
-
-                  <div class="card__front">
-                    <img class="logo__utez logos__formacion" src="./assets/img/logoVeda.png">
-                  </div>
-
-                  <div class="card__back">
-                    <b class="formacion__card-title">Ing. en Desarrollo y Gestión de Software</b>
-                    <span class="formacion__card-subtitle">Universidad Tecnológica de Querétaro</span>
-                    <p class="formacion__card-year">2022 - 2024</p>
-                    <p class="formacion__card-description font-sm">🎓 Durante mi periodo en la Universidad adquirí
-                      conocimientos y habilidades para el desarrollo de aplicaciones de software multiplataforma. Mi
-                      educación estuvo enfocada en aplicar la teoría en proyectos prácticos, lo que me permitió
-                      desarrollar pensamiento crítico y soluciones de problemas efectivos.</p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- Derecha -->
-          <div class="formacion__section-right">
-
-            <div class="formacion__container-utez">
-
-              <span class="formacion__line-utez"></span>
-              <span class="formacion__circle-utez"></span>
-
-              <div class="formacion__card-utez formacion__cards">
-                <div class="card__inner">
-
-                  <div class="card__front">
-                    <img class="logos__formacion" src="./assets/img/Logo-utez.png">
-                  </div>
-
-                  <div class="card__back">
-                    <b class="formacion__card-title">TSU en Desarrollo de Software multiplataforma</b>
-                    <span class="formacion__card-subtitle">Universidad Tecnológica de Emiliano Zapata</span>
-                    <p class="formacion__card-year">2020 - 2022</p>
-                    <p class="formacion__card-description font-sm">🎓 Mi formación me proporcionó bases para el
-                      desarrollo
-                      de aplicaciones multiplataforma. A través de proyectos integradores, trabajé en conjunto con
-                      compañeros y bajo la guía de profesores expertos, lo que me permitió aplicar conocimientos
-                      teóricos
-                      en entornos de desarrollo realistas.</p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- SKILLS SECTION -->
-    <div class="skills__section" id="skills">
-
-      <div class="skills__container container">
-        <div class="container__title-skill">
-          <span class="skills__shadow">Skills</span>
-          <h2 class="skills__title font-xl">Skills</h2>
-        </div>
-
-        <div class="container__content">
-          <!-- Lenguajes -->
-          <div class="container__lenguajes container__section-cards">
-            <h3 class="container__lenguajes-title font-lg">Lenguajes</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- Java -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-java.svg" alt="Java" class="skills__card-icon" />
-                <p class="skills__card-text">Java</p>
-              </div>
-              <!-- php -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-php.svg" alt="PHP" class="skills__card-icon" />
-                <p class="skills__card-text">PHP</p>
-              </div>
-              <!-- Javascript -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-javascript.svg" alt="Javascript" class="skills__card-icon" />
-                <p class="skills__card-text">Javascript</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Frameworks -->
-          <div class="container__frameworks container__section-cards">
-            <h3 class="container__frameworks-title font-lg">Frameworks / librerías</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- React js -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-react.svg" alt="ReactJS" class="skills__card-icon" />
-                <p class="skills__card-text">React JS</p>
-              </div>
-
-              <!-- React native -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-react.svg" alt="React Native" class="skills__card-icon" />
-                <p class="skills__card-text">React Native</p>
-              </div>
-
-              <!-- Spring boot-->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-spring-boot.svg" alt="Spring Boot" class="skills__card-icon" />
-                <p class="skills__card-text">Spring Boot</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container__content">
-
-          <!-- Bases de datos -->
-          <div class="container__bases-datos container__section-cards">
-            <h3 class="container__bases-datos-title font-lg">Bases de datos</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- MySql -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-mysql.svg" alt="MySql" class="skills__card-icon" />
-                <p class="skills__card-text">MySql</p>
-              </div>
-
-              <!-- Mongo db -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-mongodb.svg" alt="MongoDB" class="skills__card-icon" />
-                <p class="skills__card-text">MongoDB</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Diseño -->
-          <div class="container__disenio container__section-cards">
-            <h3 class="container__disenio-title font-lg">Diseño</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- Figma -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-figma.svg" alt="Figma" class="skills__card-icon" />
-                <p class="skills__card-text">Figma</p>
-              </div>
-
-              <!-- Illustrator -->
-              <div class="skills__card">
-                <img src="./assets/icons/illustrator.svg" alt="Illustrator" class="skills__card-icon" />
-                <p class="skills__card-text">Illustrator</p>
-              </div>
-
-              <!-- Photoshop -->
-              <div class="skills__card">
-                <img src="./assets/icons/photoshop.svg" alt="Photoshop" class="skills__card-icon" />
-                <p class="skills__card-text">Photoshop</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="container__content">
-
-          <!-- Marcado y estilos -->
-          <div class="container__marcado container__section-cards">
-            <h3 class="container__marcado-title font-lg">Marcado y Estilos</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- Html -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-html5.svg" alt="Html" class="skills__card-icon" />
-                <p class="skills__card-text">Html</p>
-              </div>
-
-              <!-- css -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-css3.svg" alt="Css" class="skills__card-icon" />
-                <p class="skills__card-text">Css</p>
-              </div>
-
-              <!-- sass -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-sass.svg" alt="Sass" class="skills__card-icon" />
-                <p class="skills__card-text">Sass</p>
-              </div>
-
-              <!-- bootstrap -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-bootstrap.svg" alt="Bootstrap" class="skills__card-icon" />
-                <p class="skills__card-text">Bootstrap</p>
-              </div>
-
-              <!-- Next UI -->
-              <div class="skills__card">
-                <img src="./assets/icons/nextui.svg" alt="Next UI" class="skills__card-icon" />
-                <p class="skills__card-text">Next UI</p>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Otros -->
-          <div class="container__otros container__section-cards">
-            <h3 class="container__otros-title font-lg">Otros</h3>
-            <span class="container__title-line"></span>
-
-            <div class="content__cards">
-              <!-- paquetería office -->
-              <div class="skills__card">
-                <img src="./assets/icons/office.svg" alt="Office" class="skills__card-icon" />
-                <p class="skills__card-text">Paquetería Office</p>
-              </div>
-
-              <!-- Git -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-git.svg" alt="Git" class="skills__card-icon" />
-                <p class="skills__card-text">Git</p>
-              </div>
-
-              <!-- Github -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-github.svg" alt="Github" class="skills__card-icon" />
-                <p class="skills__card-text">Github</p>
-              </div>
-
-              <!-- Gitlab -->
-              <div class="skills__card">
-                <img src="./assets/icons/bxl-gitlab.svg" alt="Gitlab" class="skills__card-icon" />
-                <p class="skills__card-text">Gitlab</p>
-              </div>
-
-              <!-- Jira -->
-              <div class="skills__card">
-                <img src="./assets/icons/jira.svg" alt="Jira" class="skills__card-icon" />
-                <p class="skills__card-text">Jira Software</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-    </div>
-
-    <!-- PROJECTS SECTION -->
-    <div class="projects__section" id="projects">
-      <div class="projects__container container">
-        <div class="container__title-projects">
-          <span class="projects__shadow">Proyectos</span>
-          <h2 class="skills__title font-xl">Proyectos</h2>
-        </div>
-
-        <div class="project__container-content">
-          <!-- Encriptor -->
-          <div class="card__project">
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Challenge de Oracle Education</p>
-                <span class="card__project-title">Encriptador de</span>
-                <span class="card__project-title">Texto</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://github.com/GalaxyPliego/ONE-TextEncriptor"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-                <a target="_blank" href="https://galaxypliego.github.io/ONE-TextEncriptor/"
-                  class="project__btn-demo btn">Ver demo</a>
-              </div>
-
-            </div>
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/textencriptor-project.png" alt="Proyecto Oracle Education"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Oracle Education"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://github.com/GalaxyPliego/ONE-TextEncriptor"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                  <a target="_blank" href="https://galaxypliego.github.io/ONE-TextEncriptor/"
-                    class="project__btn-demo btn">Ver demo</a>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- Gif gallery app -->
-          <div class="card__project">
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/gif-gallery-app.png" alt="Proyecto Oracle Education"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Oracle Education"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://github.com/GalaxyPliego/Gif-Gallery-App"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                  <a target="_blank" href="https://galaxypliego.github.io/Gif-Gallery-App/"
-                    class="project__btn-demo btn">Ver demo</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Proyecto curso de Udemy</p>
-                <span class="card__project-title">Gif</span>
-                <span class="card__project-title">Gallery</span>
-                <span class="card__project-title">App</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__react">React + Vite</span>
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://github.com/GalaxyPliego/Gif-Gallery-App"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-                <a target="_blank" href="https://galaxypliego.github.io/Gif-Gallery-App/"
-                  class="project__btn-demo btn">Ver demo</a>
-              </div>
-
-            </div>
-
-          </div>
-          <!-- Frontend mentors -->
-          <div class="card__project">
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Challenges personales</p>
-                <span class="card__project-title">Challenges</span>
-                <span class="card__project-title">de</span>
-                <span class="card__project-title">Frontend</span>
-                <span class="card__project-title">Mentor</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://github.com/GalaxyPliego/FrontendMentor"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-                <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</b> -->
-              </div>
-
-            </div>
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/frontendMentors.jpg" alt="Proyectos de frontend mentos"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Oracle Education"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://github.com/GalaxyPliego/FrontendMentor"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                  <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</button> -->
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- App notas -->
-          <div class="card__project">
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/appNotas.png" alt="Proyecto App notas"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Oracle Education"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://gitlab.com/2022378002/appnotas"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Practica de una PWA</p>
-                <span class="card__project-title">App</span>
-                <span class="card__project-title">Notas</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__react">React + CRA</span>
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-                <span class="tag__tech tech__css">PWA</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://gitlab.com/2022378002/appnotas"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-              </div>
-
-            </div>
-
-          </div>
-          <!-- Veterinaria app -->
-          <div class="card__project">
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Proyecto final escolar</p>
-                <span class="card__project-title">Veterinaria</span>
-                <span class="card__project-title">Petcare</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-                <span class="tag__tech tech__react">React</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://gitlab.com/2022378002/veterinariaapp-pwa"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-                <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</b> -->
-              </div>
-
-            </div>
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/petcare.png" alt="Proyectos de frontend mentos"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Oracle Education"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://gitlab.com/2022378002/veterinariaapp-pwa"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                  <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</button> -->
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- Rick and Morty app -->
-          <div class="card__project">
-            <div class="card__image-container">
-              <div class="content__img-project">
-                <img src="./assets/img/rickAndMortyApp.jpg" alt="Proyecto Movil Rick and Morty"
-                  class="card__image-project" />
-              </div>
-
-              <div class="card__overlay">
-                <img src="./assets/img/LogoCarlosSL.svg" alt="Proyecto Rick and Morty"
-                  class="card__image-project-logo" />
-                <div class="container__card-overlay-btns">
-                  <a target="_blank" href="https://github.com/GalaxyPliego/DDI_RickAndMortyApp"
-                    class="project__btn-repo btn-outline btn">Repositorio</a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="card__info">
-              <div class="container__-project-info">
-                <p class="card__project-subtitle">Proyecto escolar - Desarrollo móvil</p>
-                <span class="card__project-title">Rick</span>
-                <span class="card__project-title">And</span>
-                <span class="card__project-title">Morty</span>
-                <span class="card__project-title">App</span>
-              </div>
-              <div class="container__tags-tech">
-                <span class="tag__tech tech__react">React Native</span>
-                <span class="tag__tech tech__html">HTML</span>
-                <span class="tag__tech tech__css">CSS</span>
-                <span class="tag__tech tech__js">Javascript</span>
-                <span class="tag__tech tech__css">Expo</span>
-              </div>
-              <div class="container__project-btns">
-                <a target="_blank" href="https://github.com/GalaxyPliego/DDI_RickAndMortyApp"
-                  class="project__btn-repo btn-outline btn">Repositorio</a>
-              </div>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-
-    <!-- FORMULARIO DE CONTACTO -->
-    <div class="contacto__section" id="contacto">
-      <div class="container container__contact-form">
-        <div class="contacto__container-left">
-          <h2 class="contacto__title font-xl">
-            Contáctame
+      <!-- ABOUT SECTION -->
+      <div class="about__section" id="sobre">
+        <span class="about__line-h"></span>
+        <div class="container about__container">
+          <h2 class="about__title font-xl container__title-section">
+            <span class="title__shadow">Sobre mi</span>
+            Sobre mi
           </h2>
-          <p class="contacto__description">
-            Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje
-            a través del siguiente formulario o a través de mis redes sociales y
-            responderé lo más pronto posible :)
-          </p>
-          <div class="contacto__info-container">
-            <!-- Se pondrá el correo con su icono, el celular y la ubicacion -->
-            <div class="contacto__email-container">
-              <i class="ti ti-mail contacto__email-icon"></i>
-              <p class="email__txt">carlospliego226@gmail.com</p>
+
+          <div class="about__description-container">
+            <p class="about__description font-lg">
+              🎓 Estoy en proceso de obtener el grado de
+              <strong>Ing. en Desarrollo y Gestión de Software</strong>, con una
+              formación académica en la
+              <em>Universidad Tecnológica de Querétaro</em> y un título de
+              <em>Técnico Superior Universitario</em> de la
+              <em>Universidad Tecnológica Emiliano Zapata (UTEZ)</em>. Mi
+              formación académica se complementa actualmente con estudios en
+              <strong class="color-primary">Oracle One Education</strong>.
+            </p>
+            <p class="about__description font-lg">
+              🧘 Dedico tiempo a mejorar mi vida personal y espiritual a través
+              del deporte 🏃 y actividades familiares 🏡 e interpersonales,
+              creyendo en el equilibrio entre un estilo de vida saludable 🍏 y
+              una carrera profesional en constante evolución 🚀.
+            </p>
+            <p class="about__description font-lg">
+              🔍 Mi enfoque actual está en expandir mi especialización en el
+              desarrollo <strong>Frontend</strong>, mientras fortalezco mis
+              habilidades de liderazgo 🌟 y colaboración en equipos 🤝. Estoy en
+              busca de oportunidades que me reten y me permitan aportar mi
+              experiencia en la creación de software funcional e intuitivo 💻.
+            </p>
+          </div>
+          <!-- BOTON PARA BAJAR A LA PARTE DE HOBBIES  -->
+          <div class="about__btn-container">
+            <a href="#hobbies" class="btn__hobbies">
+              <i class="ti ti-arrow-down about__btn-icon"></i>
+              Mis Hobbies
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERESES SECTION -->
+      <div class="intereses__section" id="hobbies">
+        <div class="container intereses__container">
+          <h2 class="container__title-section font-xl">
+            <span class="title__shadow">Mis hobbies</span>
+            Mis Hobbies
+          </h2>
+
+          <div class="intereses__body">
+            <div class="intereses__card intereses__deporte">
+              <i class="ti ti-ball-volleyball intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Deporte</p>
             </div>
-            <div class="contacto__phone-container">
-              <i class="ti ti-brand-whatsapp contacto__phone-icon"></i>
-              <p class="phone__txt">(+52) 442 123 4567</p>
+
+            <div class="intereses__card intereses__aprender">
+              <i class="ti ti-school intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Aprender</p>
             </div>
-            <div class="contacto__location-container">
-              <i class="ti ti-map-pin contacto__location-icon"></i>
-              <p class="location__txt">Querétaro, México</p>
+
+            <div class="intereses__card intereses__leer">
+              <i class="ti ti-book intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Leer</p>
+            </div>
+
+            <div class="intereses__card intereses__viajar">
+              <i class="ti ti-plane intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Viajar</p>
+            </div>
+
+            <div class="intereses__card intereses__compras">
+              <i class="ti ti-shopping-cart intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Compras</p>
+            </div>
+
+            <div class="intereses__card intereses__peliculas">
+              <i class="ti ti-video intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Películas</p>
+            </div>
+
+            <div class="intereses__card intereses__musica">
+              <i class="ti ti-music intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Música</p>
+            </div>
+
+            <div class="intereses__card intereses__juegos">
+              <i class="ti ti-device-gamepad-2 intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Juegos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMACIÓN ACADÉMICA SECTION -->
+      <div class="formacion__section" id="formacion">
+        <div class="container formacion__section-container">
+          <h2 class="formacion__title font-xl container__title-section">
+            <span class="title__shadow title__shadow-formacion">Mi Formación Académica</span>
+            Mi Formación Académica
+          </h2>
+          <div class="formacion__content">
+            <span class="formacion__line-v"></span>
+            <span class="container__txt-continuara container__txt-formacion">
+              <p class="txt__continuara font-lg">🚀 Continuará...</p>
+            </span>
+            <span class="container__txt-one container__txt-formacion">
+              <p class="txt__one font-lg">
+                Oracle One Education + Alura Latam 😎
+              </p>
+            </span>
+            <span class="container__txt-udemy container__txt-formacion">
+              <p class="txt__udemy font-lg">😯 Cursos Udemy</p>
+            </span>
+
+            <!-- Izquierda -->
+            <div class="formacion__section-left">
+              <div class="formacion__container-uteq">
+                <span class="formacion__line-uteq"></span>
+                <span class="formacion__circle-uteq"></span>
+
+                <div class="formacion__card-uteq formacion__cards">
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <img
+                        class="logo__utez logos__formacion"
+                        src="./assets/img/logoVeda.png"
+                      />
+                    </div>
+
+                    <div class="card__back">
+                      <b class="formacion__card-title"
+                        >Ing. en Desarrollo y Gestión de Software</b
+                      >
+                      <span class="formacion__card-subtitle"
+                        >Universidad Tecnológica de Querétaro</span
+                      >
+                      <p class="formacion__card-year">2022 - 2024</p>
+                      <p class="formacion__card-description font-sm">
+                        🎓 Durante mi periodo en la Universidad adquirí
+                        conocimientos y habilidades para el desarrollo de
+                        aplicaciones de software multiplataforma. Mi educación
+                        estuvo enfocada en aplicar la teoría en proyectos
+                        prácticos, lo que me permitió desarrollar pensamiento
+                        crítico y soluciones de problemas efectivos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Derecha -->
+            <div class="formacion__section-right">
+              <div class="formacion__container-utez">
+                <span class="formacion__line-utez"></span>
+                <span class="formacion__circle-utez"></span>
+
+                <div class="formacion__card-utez formacion__cards">
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <img
+                        class="logos__formacion"
+                        src="./assets/img/Logo-utez.png"
+                      />
+                    </div>
+
+                    <div class="card__back">
+                      <b class="formacion__card-title"
+                        >TSU en Desarrollo de Software multiplataforma</b
+                      >
+                      <span class="formacion__card-subtitle"
+                        >Universidad Tecnológica de Emiliano Zapata</span
+                      >
+                      <p class="formacion__card-year">2020 - 2022</p>
+                      <p class="formacion__card-description font-sm">
+                        🎓 Mi formación me proporcionó bases para el desarrollo
+                        de aplicaciones multiplataforma. A través de proyectos
+                        integradores, trabajé en conjunto con compañeros y bajo
+                        la guía de profesores expertos, lo que me permitió
+                        aplicar conocimientos teóricos en entornos de desarrollo
+                        realistas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS SECTION -->
+      <div class="skills__section" id="skills">
+        <div class="skills__container container">
+          <div class="container__title-skill">
+            <span class="skills__shadow">Skills</span>
+            <h2 class="skills__title font-xl">Skills</h2>
+          </div>
+
+          <div class="container__content">
+            <!-- Lenguajes -->
+            <div class="container__lenguajes container__section-cards">
+              <h3 class="container__lenguajes-title font-lg">Lenguajes</h3>
+              <span class="container__title-line"></span>
+
+              <div class="content__cards">
+                <!-- Java -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-java.svg"
+                    alt="Java"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Java</p>
+                </div>
+                <!-- php -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-php.svg"
+                    alt="PHP"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">PHP</p>
+                </div>
+                <!-- Javascript -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-javascript.svg"
+                    alt="Javascript"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="container__frameworks container__section-cards container__end-position">
+              <h3 class="container__frameworks-title font-lg">
+                Frameworks / librerías
+              </h3>
+              <span class="container__title-line"></span>
+
+              <div class="content__cards">
+                <!-- React js -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-react.svg"
+                    alt="ReactJS"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">React JS</p>
+                </div>
+
+                <!-- React native -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-react.svg"
+                    alt="React Native"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">React Native</p>
+                </div>
+
+                <!-- Spring boot-->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-spring-boot.svg"
+                    alt="Spring Boot"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Spring Boot</p>
+                </div>
+              </div>
             </div>
           </div>
 
-        </div>
+          <div class="container__content">
+            <!-- Bases de datos -->
+            <div class="container__bases-datos container__section-cards">
+              <h3 class="container__bases-datos-title font-lg">
+                Bases de datos
+              </h3>
+              <span class="container__title-line"></span>
 
-        <span class="contacto__line"></span>
+              <div class="content__cards">
+                <!-- MySql -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-mysql.svg"
+                    alt="MySql"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">MySql</p>
+                </div>
 
-        <div class="contacto__container-right">
-          <form action="https://formspree.io/f/moqyqzqz" method="POST" class="contacto__form-container">
-            <div class="contacto__form-group-name">
-              <!-- <label for="nombre" class="contacto__form-label">Nombre</label> -->
-              <input type="email" placeholder="Email" name="email" id="email" class="contacto__form-input" required />
-              <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="contacto__form-input" required />
+                <!-- Mongo db -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-mongodb.svg"
+                    alt="MongoDB"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">MongoDB</p>
+                </div>
+              </div>
             </div>
-            <div class="contacto__form-grout-asunto">
-              <input type="text" placeholder="Asunto" name="asunto" id="asunto" class="contacto__form-input" required />
+
+            <!-- Diseño -->
+            <div class="container__disenio container__section-cards container__end-position">
+              <h3 class="container__disenio-title font-lg">Diseño</h3>
+              <span class="container__title-line"></span>
+
+              <div class="content__cards">
+                <!-- Figma -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-figma.svg"
+                    alt="Figma"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Figma</p>
+                </div>
+
+                <!-- Illustrator -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/illustrator.svg"
+                    alt="Illustrator"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Illustrator</p>
+                </div>
+
+                <!-- Photoshop -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/photoshop.svg"
+                    alt="Photoshop"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Photoshop</p>
+                </div>
+              </div>
             </div>
-            <div class="contacto__form-group-mensaje">
-              <textarea name="mensaje" placeholder="Mensaje" id="mensaje" class="contacto__form-textarea"
-                required></textarea>
+          </div>
+
+          <div class="container__content">
+            <!-- Marcado y estilos -->
+            <div class="container__marcado container__section-cards">
+              <h3 class="container__marcado-title font-lg">
+                Marcado y Estilos
+              </h3>
+              <span class="container__title-line"></span>
+
+              <div class="content__cards">
+                <!-- Html -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-html5.svg"
+                    alt="Html"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Html</p>
+                </div>
+
+                <!-- css -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-css3.svg"
+                    alt="Css"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Css</p>
+                </div>
+
+                <!-- sass -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-sass.svg"
+                    alt="Sass"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Sass</p>
+                </div>
+
+                <!-- bootstrap -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-bootstrap.svg"
+                    alt="Bootstrap"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Bootstrap</p>
+                </div>
+
+                <!-- Next UI -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/nextui.svg"
+                    alt="Next UI"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Next UI</p>
+                </div>
+              </div>
             </div>
-          </form>
+
+            <!-- Otros -->
+            <div class="container__otros container__section-cards container__end-position">
+              <h3 class="container__otros-title font-lg">Otros</h3>
+              <span class="container__title-line line__end"></span>
+
+              <div class="content__cards">
+                <!-- paquetería office -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/office.svg"
+                    alt="Office"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Paquetería Office</p>
+                </div>
+
+                <!-- Git -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-git.svg"
+                    alt="Git"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Git</p>
+                </div>
+
+                <!-- Github -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-github.svg"
+                    alt="Github"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Github</p>
+                </div>
+
+                <!-- Gitlab -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/bxl-gitlab.svg"
+                    alt="Gitlab"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Gitlab</p>
+                </div>
+
+                <!-- Jira -->
+                <div class="skills__card">
+                  <img
+                    src="./assets/icons/jira.svg"
+                    alt="Jira"
+                    class="skills__card-icon"
+                  />
+                  <p class="skills__card-text">Jira Software</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-  </main>
+      <!-- PROJECTS SECTION -->
+      <div class="projects__section" id="projects">
+        <div class="projects__container container">
+          <div class="container__title-projects">
+            <span class="projects__shadow">Proyectos</span>
+            <h2 class="skills__title font-xl">Proyectos</h2>
+          </div>
 
-  <!-- FOOTER  -->
-  <footer class="footer">
-    <span class="container__redirect-btn">
-      <a href="#home" class="redirect__btn-link">
-        <i class="ti ti-arrow-up redirect__icon"></i>
-      </a>
-    </span>
-    <div class="container footer__container">
-      <div class="footer__logo-container">
-        <span class="footer__logo-line"></span>
-        <span class="footer__logo-line2"></span>
-        <img src="./assets/img/LogoCarlosSL.png" alt="Charlie Espipliego" class="footer__logo-img" />
+          <div class="project__container-content">
+            <!-- Encriptor -->
+            <div class="card__project card__project-reverse">
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">
+                    Challenge de Oracle Education
+                  </p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">Encriptador de</span>
+                    <span class="card__project-title">Texto</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://github.com/GalaxyPliego/ONE-TextEncriptor"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://galaxypliego.github.io/ONE-TextEncriptor/"
+                    class="project__btn-demo btn"
+                    >Ver demo</a
+                  >
+                </div>
+              </div>
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/textencriptor-project.png"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GalaxyPliego/ONE-TextEncriptor"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://galaxypliego.github.io/ONE-TextEncriptor/"
+                      class="project__btn-demo btn"
+                      >Ver demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gif gallery app -->
+            <div class="card__project">
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/gif-gallery-app.png"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GalaxyPliego/Gif-Gallery-App"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://galaxypliego.github.io/Gif-Gallery-App/"
+                      class="project__btn-demo btn"
+                      >Ver demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">Proyecto curso de Udemy</p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">Gif</span>
+                    <span class="card__project-title">Gallery</span>
+                    <span class="card__project-title">App</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__react">React + Vite</span>
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://github.com/GalaxyPliego/Gif-Gallery-App"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://galaxypliego.github.io/Gif-Gallery-App/"
+                    class="project__btn-demo btn"
+                    >Ver demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Frontend mentors -->
+            <div class="card__project card__project-reverse">
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">Challenges personales</p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">Challenges</span>
+                    <span class="card__project-title">de</span>
+                    <span class="card__project-title">Frontend</span>
+                    <span class="card__project-title">Mentor</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://github.com/GalaxyPliego/FrontendMentor"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                  <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</b> -->
+                </div>
+              </div>
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/frontendMentors.jpg"
+                    alt="Proyectos de frontend mentos"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GalaxyPliego/FrontendMentor"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                    <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- App notas -->
+            <div class="card__project">
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/appNotas.png"
+                    alt="Proyecto App notas"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://gitlab.com/2022378002/appnotas"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">Practica de una PWA</p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">App</span>
+                    <span class="card__project-title">Notas</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__react">React + CRA</span>
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                  <span class="tag__tech tech__css">PWA</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://gitlab.com/2022378002/appnotas"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Veterinaria app -->
+            <div class="card__project card__project-reverse">
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">Proyecto final escolar</p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">Veterinaria</span>
+                    <span class="card__project-title">Petcare</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                  <span class="tag__tech tech__react">React</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://gitlab.com/2022378002/veterinariaapp-pwa"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                  <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</b> -->
+                </div>
+              </div>
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/petcare.png"
+                    alt="Proyectos de frontend mentos"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Oracle Education"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://gitlab.com/2022378002/veterinariaapp-pwa"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                    <!-- <button disabled class="project__btn-demo btn btn-disabled">Ver demo</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Rick and Morty app -->
+            <div class="card__project">
+              <div class="card__image-container">
+                <div class="content__img-project">
+                  <img
+                    src="./assets/img/rickAndMortyApp.jpg"
+                    alt="Proyecto Movil Rick and Morty"
+                    class="card__image-project"
+                  />
+                </div>
+
+                <div class="card__overlay">
+                  <img
+                    src="./assets/img/LogoCarlosSL.svg"
+                    alt="Proyecto Rick and Morty"
+                    class="card__image-project-logo"
+                  />
+                  <div class="container__card-overlay-btns">
+                    <a
+                      target="_blank"
+                      href="https://github.com/GalaxyPliego/DDI_RickAndMortyApp"
+                      class="project__btn-repo btn-outline btn"
+                      >Repositorio</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__info">
+                <div class="container__-project-info">
+                  <p class="card__project-subtitle">
+                    Proyecto escolar - Desarrollo móvil
+                  </p>
+                  <div class="card-project__title-container">
+                    <span class="card__project-title">Rick</span>
+                    <span class="card__project-title">And</span>
+                    <span class="card__project-title">Morty</span>
+                    <span class="card__project-title">App</span>
+                  </div>
+                </div>
+                <div class="container__tags-tech">
+                  <span class="tag__tech tech__react">React Native</span>
+                  <span class="tag__tech tech__html">HTML</span>
+                  <span class="tag__tech tech__css">CSS</span>
+                  <span class="tag__tech tech__js">Javascript</span>
+                  <span class="tag__tech tech__css">Expo</span>
+                </div>
+                <div class="container__project-btns">
+                  <a
+                    target="_blank"
+                    href="https://github.com/GalaxyPliego/DDI_RickAndMortyApp"
+                    class="project__btn-repo btn-outline btn"
+                    >Repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="footer__container-content">
-        <div class="footer__container-links">
-          <a href="#sobre" class="footer__container-links-link">Sobre mi</a>
-          <span>/</span>
-          <a href="#formacion" class="footer__container-links-link">Formación</a>
-          <span>/</span>
-          <a href="#skills" class="footer__container-links-link">Skills</a>
-          <span>/</span>
-          <a href="#experiencia" class="footer__container-links-link">Experiencia</a>
-          <span>/</span>
-          <a href="#proyectos" class="footer__container-links-link">Proyectos</a>
-        </div>
-        <div class="footer__container-socials">
-          <a href="https://www.linkedin.com/in/carlos-espipliego" target="_blank"
-            class="footer__container-socials-link">
-            <img src="./assets/icons/icon-linkedin.svg" alt="Linkedin" class="footer__container-socials-icon" />
-          </a>
-          <a href="https://github.com/GalaxyPliego" target="_blank" class="footer__container-socials-link">
-            <img src="./assets/icons/icon-github.svg" alt="GitHub" class="footer__container-socials-icon" />
-          </a>
-          <a href="https://www.facebook.com/espipliego/" target="_blank" class="footer__container-socials-link">
-            <img src="./assets/icons/icon-facebook.svg" alt="Facebook" class="footer__container-socials-icon" />
-          </a>
-          <a href="https://www.instagram.com/carlos_espipliego/" target="_blank" class="footer__container-socials-link">
-            <img src="./assets/icons/icon-instagram.svg" alt="Instagram" class="footer__container-socials-icon" />
-          </a>
-        </div>
-        <div class="footer__container-rights">
-          <p class="footer__container-rights-text font-sm">© 2024 Carlos Espinoza. Todos los derechos reservados.</p>
+      <!-- FORMULARIO DE CONTACTO -->
+      <div class="contacto__section" id="contacto">
+        <div class="container container__contact-form">
+          <div class="contacto__container-left">
+            <h2 class="contacto__title font-xl">Contáctame</h2>
+            <p class="contacto__description">
+              Si deseas ponerte en contacto conmigo, puedes enviarme un mensaje
+              a través del siguiente formulario o a través de mis redes sociales
+              y responderé lo más pronto posible :)
+            </p>
+            <div class="contacto__info-container">
+              <!-- Se pondrá el correo con su icono, el celular y la ubicacion -->
+              <div class="contacto__email-container">
+                <i class="ti ti-mail contacto__email-icon"></i>
+                <p class="email__txt">carlospliego226@gmail.com</p>
+              </div>
+              <div class="contacto__phone-container">
+                <i class="ti ti-brand-whatsapp contacto__phone-icon"></i>
+                <p class="phone__txt">(+52) 442 123 4567</p>
+              </div>
+              <div class="contacto__location-container">
+                <i class="ti ti-map-pin contacto__location-icon"></i>
+                <p class="location__txt">Querétaro, México</p>
+              </div>
+            </div>
+          </div>
+
+          <span class="contacto__line"></span>
+
+          <div class="contacto__container-right">
+            <form
+              action="https://formspree.io/f/moqyqzqz"
+              method="POST"
+              class="contacto__form-container"
+            >
+              <div class="contacto__form-group-name">
+                <!-- <label for="nombre" class="contacto__form-label">Nombre</label> -->
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  class="contacto__form-input"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  name="nombre"
+                  id="nombre"
+                  class="contacto__form-input"
+                  required
+                />
+              </div>
+              <div class="contacto__form-grout-asunto">
+                <input
+                  type="text"
+                  placeholder="Asunto"
+                  name="asunto"
+                  id="asunto"
+                  class="contacto__form-input"
+                  required
+                />
+              </div>
+              <div class="contacto__form-group-mensaje">
+                <textarea
+                  name="mensaje"
+                  placeholder="Mensaje"
+                  id="mensaje"
+                  class="contacto__form-textarea"
+                  required
+                ></textarea>
+              </div>
+              <div class="contacto__container-btn">
+
+                <button type="submit" class="contacto__form-btn btn">Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <span class="gradient__footer"></span>
-  </footer>
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <span class="container__redirect-btn">
+        <a href="#home" class="redirect__btn-link">
+          <i class="ti ti-arrow-up redirect__icon"></i>
+        </a>
+      </span>
+      <div class="container footer__container">
+        <div class="footer__logo-container">
+          <span class="footer__logo-line"></span>
+          <span class="footer__logo-line2"></span>
+          <img
+            src="./assets/img/LogoCarlosSL.png"
+            alt="Charlie Espipliego"
+            class="footer__logo-img"
+          />
+        </div>
 
-  <!-- <script src="./scripts/index.js"></script> -->
-  <script src="./scripts/skills.js"></script>
+        <div class="footer__container-content">
+          <div class="footer__container-links">
+            <a href="#sobre" class="footer__container-links-link">Sobre mi</a>
+            <span>/</span>
+            <a href="#formacion" class="footer__container-links-link"
+              >Formación</a
+            >
+            <span>/</span>
+            <a href="#skills" class="footer__container-links-link">Skills</a>
+            <span>/</span>
+            <a href="#experiencia" class="footer__container-links-link"
+              >Experiencia</a
+            >
+            <span>/</span>
+            <a href="#proyectos" class="footer__container-links-link"
+              >Proyectos</a
+            >
+          </div>
+          <div class="footer__container-socials">
+            <a
+              href="https://www.linkedin.com/in/carlos-espipliego"
+              target="_blank"
+              class="footer__container-socials-link"
+            >
+              <img
+                src="./assets/icons/icon-linkedin.svg"
+                alt="Linkedin"
+                class="footer__container-socials-icon"
+              />
+            </a>
+            <a
+              href="https://github.com/GalaxyPliego"
+              target="_blank"
+              class="footer__container-socials-link"
+            >
+              <img
+                src="./assets/icons/icon-github.svg"
+                alt="GitHub"
+                class="footer__container-socials-icon"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/espipliego/"
+              target="_blank"
+              class="footer__container-socials-link"
+            >
+              <img
+                src="./assets/icons/icon-facebook.svg"
+                alt="Facebook"
+                class="footer__container-socials-icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/carlos_espipliego/"
+              target="_blank"
+              class="footer__container-socials-link"
+            >
+              <img
+                src="./assets/icons/icon-instagram.svg"
+                alt="Instagram"
+                class="footer__container-socials-icon"
+              />
+            </a>
+          </div>
+          <div class="footer__container-rights">
+            <p class="footer__container-rights-text font-sm">
+              © 2024 Carlos Espinoza. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <span class="gradient__footer"></span>
+    </footer>
 
+    <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/skills.js"></script>
+  </body>
 </html>

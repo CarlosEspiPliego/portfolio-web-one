@@ -76,3 +76,20 @@
     display: flex;
     gap: .5rem;
 }
+
+.contacto__container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+}
+
+.contacto__form-btn {
+    width: 100%;
+}
+
+/* Query para cuando es mobil */
+@media screen and (max-width: 768px) {
+    
+}

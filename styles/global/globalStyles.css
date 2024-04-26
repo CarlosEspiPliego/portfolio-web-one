@@ -43,7 +43,7 @@ h1 {
     font-family: var(--title-font);
     font-style: normal;
     font-weight: 600;
-    line-height: 3.25rem;
+    line-height: var(--line-height-h1);
 }
 
 h1, h2, h3, h4, p {
@@ -59,19 +59,19 @@ h1, h2, h3, h4 {
 h2 {
     font-size: var(--h2-font-size);
     font-weight: 500;
-    line-height: 2.75rem;
+    line-height: var(--line-height-h2);
 
 }
 
 h3 {
     font-size: var(--h3-font-size);
     font-weight: 500;
-    line-height: 2.25rem;
+    line-height: var(--line-height-h3);
 }
 
 p {
     font-size: var(--normal-font-size);
-    line-height: 1.375rem;
+    line-height: var(--line-height-normal); 
     color: var(--text-color);
 }
 
@@ -125,19 +125,22 @@ textarea:focus {
     font-size: var(--biggest-font-size);
     font-family: var(--title-font);
     font-weight: 500;
-    line-height: 84px; /* 131.25% */
+    line-height: var(--line-height-biggest);
 }
 
 .font-lg {
     font-size: var(--h3-font-size);
+    line-height: var(--line-height-h3);
 }
 
 .font-sm {
     font-size: var(--small-font-size);
+    line-height: var(--line-height-small);
 }
 
 .font-tiny {
     font-size: var(--tiny-font-size);
+    line-height: var(--line-height-tiny);
 }
 
 .color-primary {
@@ -172,7 +175,7 @@ button {
 
 .btn-lg {
     padding: 1rem 2rem;
-    font-size: 18px;
+    font-size: var(--h3-font-size);
 }
 
 .btn:hover {
@@ -192,8 +195,6 @@ button {
 
 
 /* Query cuando la pantalla mobile */
-/* @media screen and (min-width: 320px) and (max-width: 768px) {
-    body {
-        font-size: var(--normal-font-size);
-    }
-} */
+@media screen and (max-width: 768px) {
+    
+}

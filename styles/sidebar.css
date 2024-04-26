@@ -46,3 +46,27 @@
     background-color: var(--primary-color);
     transform: scale(1.1);    
 }
+
+/* Query para cuando la pantalla es mayor o igual a 768 y menor a 1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        width: 0.5rem;
+    }
+
+    .line__sidebar {
+        width: 1px;
+    }
+
+    .sidebar__btns {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+}
+
+/* Query para cuando es mobile */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}

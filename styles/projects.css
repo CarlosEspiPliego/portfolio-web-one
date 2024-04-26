@@ -159,3 +159,33 @@
     display: flex;
     gap: 1rem;
 }
+
+/* Query  */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card__project {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card__project-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .card__info {
+        width: 100%;
+    }
+
+    .card-project__title-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card__image-container {
+        width: 100%;
+    }
+
+    .tag__tech {
+        padding: 0.5rem 1rem;
+    }
+}

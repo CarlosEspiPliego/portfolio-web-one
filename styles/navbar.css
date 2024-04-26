@@ -1,4 +1,8 @@
 /* NAVBAR */
+.navbar {
+    padding: 0 2rem;
+}
+
 .gradient__header {
     background: radial-gradient(closest-side, rgba(28, 49, 156, .3) 0%, rgba(1, 6, 31, .1) 100%);
     position: absolute;
@@ -15,7 +19,6 @@
     justify-content: space-between;
     text-decoration: none;
     padding: 0;
-
 }
 
 .navbar__menu-link {
@@ -41,4 +44,33 @@
 
 .navbar__logo-img:hover {
     transform: scale(1.1);
+}
+
+/* Query para cuando la pantalla es mayor o igual a 768 y menor a 1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar__logo-img {
+        width: 60px;
+    }
+}
+
+/* Query para cuando es mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 1000;
+        height: 4rem;
+        bottom: 1rem;
+        margin: auto;
+        backdrop-filter: blur(10px);
+    }
 }
