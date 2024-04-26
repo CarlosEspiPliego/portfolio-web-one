@@ -193,7 +193,6 @@ button {
     color: var(--text-color-btn);
 }
 
-
 /* Query cuando la pantalla mobile */
 @media screen and (max-width: 768px) {
     

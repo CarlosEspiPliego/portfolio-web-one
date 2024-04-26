@@ -65,7 +65,7 @@
 }
 
 /* Query para cuando la pantalla es mayor o igual a 768 y menor a 1024 */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .intereses__body {
         grid-template-columns: repeat(2, 1fr);
         
