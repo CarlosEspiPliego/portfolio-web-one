@@ -9,16 +9,16 @@ html {
 
 body {
     background-color: var(--body-color);
+    /* background-color: radial-gradient(closest-side, rgba(28, 49, 156, .3) 0%, rgba(1, 6, 31, .1) 100%); */
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    position: relative;
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
+    width: 100%; */
 }
 
 ul {
@@ -194,6 +194,3 @@ button {
 }
 
 /* Query cuando la pantalla mobile */
-@media screen and (max-width: 768px) {
-    
-}
