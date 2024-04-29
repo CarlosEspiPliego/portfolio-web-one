@@ -1,72 +1,55 @@
 .sidebar {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aliceblue; */
-    width: 1rem;
-    height: 25rem;
-    position: fixed;
-    left: 1rem;
-    top: 50vh;
-    transform: translate(50%, -50%);
-    z-index: 1000;
+    display: none;
 }
 
-.container__links {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.line__sidebar {
-    display: flex;
-    position: absolute;
-    background-color: var(--line-color);
-    right: 50%;
-    height: 100%;
-    width: 2px;
-    z-index: -10px;
-}
-
-.sidebar__btns {
-    background-color: var(--line-color);
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.sidebar__btns:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.1);
-}
-
-.active__btn-sidebar {
-    background-color: var(--primary-color);
-    transform: scale(1.1);    
-}
-
-/* Query para cuando la pantalla es mayor o igual a 768 y menor a 1024 */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* Query para cuando la pantalla es Desktop */
+@media screen and (min-width: 1024px) {
     .sidebar {
-        width: 0.5rem;
-    }
-
-    .line__sidebar {
-        width: 1px;
-    }
-
-    .sidebar__btns {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aliceblue; */
         width: 1rem;
-        height: 1rem;
+        height: 25rem;
+        position: fixed;
+        left: 1rem;
+        top: 50vh;
+        transform: translate(50%, -50%);
+        z-index: 1000;
     }
     
-}
-
-/* Query para cuando es mobile */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        display: none;
+    .container__links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .line__sidebar {
+        display: flex;
+        position: absolute;
+        background-color: var(--line-color);
+        right: 50%;
+        height: 100%;
+        width: 2px;
+        z-index: -10px;
+    }
+    
+    .sidebar__btns {
+        background-color: var(--line-color);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    
+    .sidebar__btns:hover {
+        background-color: var(--primary-color);
+        transform: scale(1.1);
+    }
+    
+    .active__btn-sidebar {
+        background-color: var(--primary-color);
+        transform: scale(1.1);    
     }
 }

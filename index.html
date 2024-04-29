@@ -27,50 +27,34 @@
 
   <body id="home">
     <!-- NAVBAR SECTION -->
-    <!-- <nav class="navbar animate__animated animate__backInRight">
+    <nav class="navbar">
       <div class="navbar__container container">
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">
-            <a href="#sobre" class="navbar__menu-link">Sobre mi</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#formacion" class="navbar__menu-link">Formación</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#skills" class="navbar__menu-link">Skills</a>
-          </li>
-          <div class="navbar__logo">
-            <a href="#home" class="navbar__logo-link">
-              <img
-                src="./assets/img/LogoCarlosSL.png"
-                alt="Charlie Espipliego"
-                class="navbar__logo-img"
-              />
-            </a>
-          </div>
-          <li class="navbar__menu-item">
-            <a href="#experiencia" class="navbar__menu-link">Experiencia</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#proyectos" class="navbar__menu-link">Proyectos</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#contacto" class="navbar__menu-link">Contacto</a>
-          </li>
-        </ul>
+        <a href="#sobre" class="navbar__menu-link">Sobre mi</a>
+        <a href="#formacion" class="navbar__menu-link">Formación</a>
+        <a href="#skills" class="navbar__menu-link">Skills</a>
+        <a href="#home" class="navbar__logo-link">
+          <img
+            src="./assets/img/LogoCarlosSL.png"
+            alt="Charlie Espipliego"
+            class="navbar__logo-img"
+          />
+        </a>
+        <a href="#experiencia" class="navbar__menu-link">Experiencia</a>
+        <a href="#proyectos" class="navbar__menu-link">Proyectos</a>
+        <a href="#contacto" class="navbar__menu-link">Contacto</a>
       </div>
-    </nav> -->
+    </nav>
 
     <nav class="navmob">
       <div class="navmob__container-btns">
-        <a href="#about" class="navmob__container-btns-link">
-          <img src="./assets/icons/user-code.svg" class=""/>
+        <a href="#sobre" class="navmob__container-btns-link">
+          <img src="./assets/icons/user-code.svg" class="" />
         </a>
         <a href="#formacion" class="navmob__container-btns-link">
-          <img src="./assets/icons/school.svg" class=""/>
+          <img src="./assets/icons/school.svg" class="" />
         </a>
         <a href="#skills" class="navmob__container-btns-link">
-          <img src="./assets/icons/swords.svg" class=""/>
+          <img src="./assets/icons/swords.svg" class="" />
         </a>
         <a href="#home" class="navmob__container--logo">
           <img
@@ -80,18 +64,393 @@
           />
         </a>
         <a href="#experiencia" class="navmob__container-btns-link">
-          <img src="./assets/icons/briefcase.svg" class=""/>
+          <img src="./assets/icons/briefcase.svg" class="" />
         </a>
         <a href="#proyectos" class="navmob__container-btns-link">
-          <img src="./assets/icons/brand-github.svg" class=""/>
+          <img src="./assets/icons/brand-github.svg" class="" />
         </a>
         <a href="#contacto" class="navmob__container-btns-link">
-          <img src="./assets/icons/mail-forward.svg" class=""/>
+          <img src="./assets/icons/mail-forward.svg" class="" />
         </a>
       </div>
     </nav>
 
-    <main class="container__main"></main>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <span class="line__sidebar"></span>
+
+      <!-- cirulos botones para navegar -->
+      <div class="container__links">
+        <a
+          onclick="activeSideBtn('home__side-btn')"
+          href="#home"
+          class="sidebar__btns active__btn-sidebar"
+          id="home__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('sobre__side-btn')"
+          href="#sobre"
+          class="sidebar__btns"
+          id="sobre__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('hobbies__side-btn')"
+          href="#hobbies"
+          class="sidebar__btns"
+          id="hobbies__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('formacion__side-btn')"
+          href="#formacion"
+          class="sidebar__btns"
+          id="formacion__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('skills__side-btn')"
+          href="#skills"
+          class="sidebar__btns"
+          id="skills__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('projects__side-btn')"
+          href="#projects"
+          class="sidebar__btns"
+          id="projects__side-btn"
+        ></a>
+        <a
+          onclick="activeSideBtn('contacto__side-btn')"
+          href="#contacto"
+          class="sidebar__btns"
+          id="contacto__side-btn"
+        ></a>
+      </div>
+    </nav>
+
+    <main class="container__main container">
+      <!-- HEADER SECTION -->
+      <div class="header">
+        <div class="headermob__container">
+          <div class="header__img-section">
+            <div class="header__img-container">
+              <img
+                src="./assets/img/profile.png"
+                alt="Foto de carlos Espipliego"
+                class="header__img-img"
+              />
+            </div>
+
+            <div class="header__btnsocials-container">
+              <a
+                class="socials__btns-link"
+                href="https://www.linkedin.com/in/carlos-espipliego"
+                target="_blank"
+              >
+                <img
+                  class="icons__socials"
+                  src="./assets/icons/icon-linkedin.svg"
+                  alt="Linkedin"
+                />
+              </a>
+              <a
+                href="https://github.com/GalaxyPliego"
+                target="_blank"
+                class="socials__btns-link"
+              >
+                <img
+                  class="icons__socials"
+                  src="./assets/icons/icon-github.svg"
+                  alt="GitHub"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/espipliego/"
+                target="_blank"
+                class="socials__btns-link"
+              >
+                <img
+                  class="icons__socials"
+                  src="./assets/icons/icon-facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/carlos_espipliego/"
+                target="_blank"
+                class="socials__btns-link"
+              >
+                <img
+                  class="icons__socials"
+                  src="./assets/icons/icon-instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="header__info-section">
+            <div>
+              <p class="header__title-text font-xl">
+                ¡Hola! soy Carlos Espinoza
+              </p>
+              <p class="header__subtitle-text">
+                Desarrollador Web <strong>Frontend</strong>
+              </p>
+            </div>
+            <p class="header__introduction-text">
+              Actualmente participando en el proyecto Oracle One Education +
+              Alura Latam
+            </p>
+            <div class="header__container-btns">
+              <!-- Botones para descargar cv y redirigir a la seccion #contacto -->
+              <a
+                href="/assets/docs/CV-CarlosEspinoza.pdf"
+                target="_blank"
+                class="btn btn-outline header__btns"
+                >Ver CV</a
+              >
+              <a href="#contacto" class="btn header__btns">Contáctame</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="headerdesk__btnsocials-container">
+          <span class="header__btnsocials-line"></span>
+          <a
+            class="socials__btns-link"
+            href="https://www.linkedin.com/in/carlos-espipliego"
+            target="_blank"
+          >
+            <img
+              class="icons__socials"
+              src="./assets/icons/icon-linkedin.svg"
+              alt="Linkedin"
+            />
+          </a>
+          <a
+            href="https://github.com/GalaxyPliego"
+            target="_blank"
+            class="socials__btns-link"
+          >
+            <img
+              class="icons__socials"
+              src="./assets/icons/icon-github.svg"
+              alt="GitHub"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/espipliego/"
+            target="_blank"
+            class="socials__btns-link"
+          >
+            <img
+              class="icons__socials"
+              src="./assets/icons/icon-facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/carlos_espipliego/"
+            target="_blank"
+            class="socials__btns-link"
+          >
+            <img
+              class="icons__socials"
+              src="./assets/icons/icon-instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <div class="about__section" id="sobre">
+        <span class="about__line-h"></span>
+        <div class="container about__container">
+          <h2 class="about__title font-xl container__title-section">
+            <span class="title__shadow">Sobre mi</span>
+            Sobre mi
+          </h2>
+
+          <div class="about__description-container">
+            <p class="about__description font-lg">
+              🎓 Estoy en proceso de obtener el grado de
+              <strong>Ing. en Desarrollo y Gestión de Software</strong>, con una
+              formación académica en la
+              <em>Universidad Tecnológica de Querétaro</em> y un título de
+              <em>Técnico Superior Universitario</em> de la
+              <em>Universidad Tecnológica Emiliano Zapata (UTEZ)</em>. Mi
+              formación académica se complementa actualmente con estudios en
+              <strong class="color-primary">Oracle One Education</strong>.
+            </p>
+            <p class="about__description parrafo-d-none font-lg">
+              🧘 Dedico tiempo a mejorar mi vida personal y espiritual a través
+              del deporte 🏃 y actividades familiares 🏡 e interpersonales,
+              creyendo en el equilibrio entre un estilo de vida saludable 🍏 y
+              una carrera profesional en constante evolución 🚀.
+            </p>
+            <p class="about__description font-lg">
+              🔍 Mi enfoque actual está en expandir mi especialización en el
+              desarrollo <strong>Frontend</strong>, mientras fortalezco mis
+              habilidades de liderazgo 🌟 y colaboración en equipos 🤝. Estoy en
+              busca de oportunidades que me reten y me permitan aportar mi
+              experiencia en la creación de software funcional e intuitivo 💻.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOBBIES SECTION -->
+      <div class="intereses__section" id="hobbies">
+        <div class="container intereses__container">
+          <h2 class="container__title-section container__title-section font-xl">
+            <span class="title__shadow">Mis hobbies</span>
+            Mis Hobbies
+          </h2>
+
+          <div class="intereses__body">
+            <div class="intereses__card intereses__deporte">
+              <i class="ti ti-ball-volleyball intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Deporte</p>
+            </div>
+
+            <div class="intereses__card intereses__aprender">
+              <i class="ti ti-school intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Aprender</p>
+            </div>
+
+            <div class="intereses__card intereses__leer">
+              <i class="ti ti-book intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Leer</p>
+            </div>
+
+            <div class="intereses__card intereses__viajar">
+              <i class="ti ti-plane intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Viajar</p>
+            </div>
+
+            <div class="intereses__card intereses__compras">
+              <i class="ti ti-shopping-cart intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Compras</p>
+            </div>
+
+            <div class="intereses__card intereses__peliculas">
+              <i class="ti ti-video intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Películas</p>
+            </div>
+
+            <div class="intereses__card intereses__musica">
+              <i class="ti ti-music intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Música</p>
+            </div>
+
+            <div class="intereses__card intereses__juegos">
+              <i class="ti ti-device-gamepad-2 intereses__icons"></i>
+              <p class="intereses__card-text font-lg">Juegos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMACION SECTION -->
+      <div class="formacion__section" id="formacion">
+        <div class="container formacion__section-container">
+          <h2 class="formacion__title font-xl container__title-section">
+            <span class="title__shadow-formacion">Formación Académica</span>
+            Formación Académica
+          </h2>
+
+          <div class="formacion__content">
+            <span class="formacion__line-v"></span>
+            <div class="container__txt-continuara container__txt-formacion">
+              <p class="txt__continuara font-lg">🚀 Continuará...</p>
+            </div>
+            <div class="container__txt-one container__txt-formacion">
+              <p class="txt__one font-lg">
+                Oracle One Education + Alura Latam 😎
+              </p>
+            </div>
+            <div class="container__txt-udemy container__txt-formacion">
+              <p class="txt__udemy font-lg">😯 Cursos Udemy</p>
+            </div>
+
+            <!-- Izquierda -->
+            <div class="formacion__section-left formacion__section-left-right">
+              <div class="formacion__container-uteq formacion__containers-uteq-utez">
+                <span class="formacion__line-uteq"></span>
+                <span class="formacion__circle-uteq"></span>
+
+                <div class="formacion__card-uteq formacion__cards">
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <img
+                        class="logo__utez logos__formacion"
+                        src="./assets/img/logoVeda.png"
+                      />
+                    </div>
+
+                    <div class="card__back">
+                      <b class="formacion__card-title"
+                        >Ing. en Desarrollo y Gestión de Software</b
+                      >
+                      <span class="formacion__card-subtitle"
+                        >Universidad Tecnológica de Querétaro</span
+                      >
+                      <p class="formacion__card-year">2022 - 2024</p>
+                      <p class="formacion__card-description font-sm">
+                        🎓 Durante mi periodo en la Universidad adquirí
+                        conocimientos y habilidades para el desarrollo de
+                        aplicaciones de software multiplataforma. Mi educación
+                        estuvo enfocada en aplicar la teoría en proyectos
+                        prácticos, lo que me permitió desarrollar pensamiento
+                        crítico y soluciones de problemas efectivos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Derecha -->
+            <div class="formacion__section-right formacion__section-left-right">
+              <div class="formacion__container-utez formacion__containers-uteq-utez">
+                <span class="formacion__line-utez"></span>
+                <span class="formacion__circle-utez"></span>
+
+                <div class="formacion__card-utez formacion__cards">
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <img
+                        class="logos__formacion"
+                        src="./assets/img/Logo-utez.png"
+                      />
+                    </div>
+
+                    <div class="card__back">
+                      <b class="formacion__card-title"
+                        >TSU en Desarrollo de Software multiplataforma</b
+                      >
+                      <span class="formacion__card-subtitle"
+                        >Universidad Tecnológica de Emiliano Zapata</span
+                      >
+                      <p class="formacion__card-year">2020 - 2022</p>
+                      <p class="formacion__card-description font-sm">
+                        🎓 Mi formación me proporcionó bases para el desarrollo
+                        de aplicaciones multiplataforma. A través de proyectos
+                        integradores, trabajé en conjunto con compañeros y bajo
+                        la guía de profesores expertos, lo que me permitió
+                        aplicar conocimientos teóricos en entornos de desarrollo
+                        realistas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
 
     <!-- FOOTER  -->
     <!-- <footer class="footer">

@@ -1,25 +1,40 @@
 @import url('./global/globalStyles.css');
 @import url('./navbar.css');
-/* @import url('./sidebar.css');
 @import url('./header.css');
+@import url('./sidebar.css');
 @import url('./about.css');
 @import url('./intereses.css');
 @import url('./formacion.css');
+/* 
 @import url('./skills.css');
 @import url('./projects.css');
 @import url('./contacto.css');
-@import url('./footer.css'); */
+@import url('./footer.css'); 
+*/
 
 .container__main {
-    height: 150vh;
+    height: var(--vh);
+    padding: 1rem;
 }
-.gradient__header {
-    background: radial-gradient(closest-side, rgba(28, 49, 156, .3) 0%, rgba(1, 6, 31, .1) 100%);
-    position: absolute;
-    top: -50%;
+
+.container__title-section {
     width: 100%;
-    height: 100%;
-    z-index: -10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__shadow {
+    font-size: var(--font-title-shadow);
+    font-weight: 800;
+    color: hsla(var(--second-hue), 13%, 40%, .1);
+    position: absolute;
+    display: flex;
+}
+
+.intereses__body {
+    
 }
 
 /* Query para cuando es tablet */
@@ -29,5 +44,8 @@
 
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
-    
+    .container__main {
+        padding: 0 4rem;
+        padding-left: 5rem;
+    }
 }
