@@ -161,6 +161,7 @@ button {
     cursor: pointer;
     color: var(--text-color-btn);
     outline: none;
+    transition: .2s ease-in-out;
 }
 
 .btn {

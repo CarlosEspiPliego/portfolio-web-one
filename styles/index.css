@@ -5,16 +5,17 @@
 @import url('./about.css');
 @import url('./intereses.css');
 @import url('./formacion.css');
-/* 
 @import url('./skills.css');
+/* 
 @import url('./projects.css');
 @import url('./contacto.css');
 @import url('./footer.css'); 
 */
 
 .container__main {
-    height: var(--vh);
     padding: 1rem;
+    padding-bottom: 5rem;
+    /* background-color: aqua; */
 }
 
 .container__title-section {
@@ -45,7 +46,6 @@
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
     .container__main {
-        padding: 0 4rem;
-        padding-left: 5rem;
+        padding: 0 4rem 3rem 5rem;
     }
 }
