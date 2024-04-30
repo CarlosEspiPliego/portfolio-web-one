@@ -1,9 +1,8 @@
 .header {
-    height: var(--vhmobile);
+    height: calc(100vh - 10rem);
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 4rem;
+    /* background-color: rgba(240, 248, 255, 0.045); */
 }
 
 .headermob__container {

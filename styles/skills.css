@@ -77,6 +77,14 @@
     color: var(--text-color);
 }
 
+.skills__card-text {
+    color: var(--text-color-light);
+}
+
+.skills__card-text {
+    color: var(--text-color-light);
+}
+
 /* Query  */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .skills__section {
