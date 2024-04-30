@@ -8,14 +8,11 @@
 @import url('./skills.css');
 @import url('./projects.css');
 @import url('./contacto.css');
-/* 
-@import url('./footer.css'); 
-*/
+@import url('./footer.css');
 
 .container__main {
     padding: 1rem;
     padding-bottom: 5rem;
-    /* background-color: aqua; */
 }
 
 .container__title-section {
