@@ -85,12 +85,10 @@
     width: 100%;
 }
 
-/* Query para cuando es mobil */
-@media screen and (max-width: 768px) {
-    
-}
-
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
-    
+    .contacto__section {
+        width: 70%;
+        margin: auto;
+    }
 }
