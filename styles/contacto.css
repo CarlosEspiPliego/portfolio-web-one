@@ -1,78 +1,74 @@
 .contacto__section {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(240, 248, 255, 0.064); */
 }
 
 .container__contact-form {
     display: flex;
+    flex-direction: column;
     position: relative;
     border: 1px solid var(--line-color);
     display: flex;
     border-radius: .5rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .contacto__container-left {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
-    padding: 0 1rem 1rem 1rem;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 1rem;
+}
+
+.contacto__title {
+    text-align: center;
 }
 
 .contacto__info-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
 
+.contacto__container-info {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 100;
+}
+
+.contacto__icon {
+    font-size: 1.5rem;
 }
 
 .contacto__description {
     font-weight: 100;
 }
 
-.contacto__email-container, .contacto__phone-container, .contacto__location-container {
+.contacto__line {
+    display: none;
+}
+
+.contacto__container-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 2rem;
-    font-weight: 100;
-}
-
-.contacto__location-icon, .contacto__phone-icon, .contacto__email-icon {
-    color: #C9CCDD;
-}
-
-.contacto__line {
-    width: 2px;
-    height: 80%;
-    background-color: var(--line-color);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
 }
 
 .contacto__form-container {
     /* background-color: #c9ccdd07; */
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.contacto__container-right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
 
-.contacto__form-group-name, .contacto__form-grout-asunto, .contacto__form-group-mensaje {
+.contacto__form-group {
     display: flex;
     gap: .5rem;
 }
@@ -91,5 +87,10 @@
 
 /* Query para cuando es mobil */
 @media screen and (max-width: 768px) {
+    
+}
+
+/* Query para cuando es desktop */
+@media screen and (min-width: 1024px) {
     
 }
