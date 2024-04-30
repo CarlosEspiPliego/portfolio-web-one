@@ -13,9 +13,8 @@
 */
 
 .container__main {
+    height: var(--vh);
     padding: 1rem;
-    padding-bottom: 5rem;
-    /* background-color: aqua; */
 }
 
 .container__title-section {
@@ -34,10 +33,6 @@
     display: flex;
 }
 
-.intereses__body {
-    
-}
-
 /* Query para cuando es tablet */
 @media screen and (max-width: 768px) {
     
@@ -46,6 +41,7 @@
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
     .container__main {
-        padding: 0 4rem 3rem 5rem;
+        padding: 0 4rem;
+        padding-left: 5rem;
     }
 }

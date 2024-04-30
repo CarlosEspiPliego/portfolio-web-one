@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
+    padding-bottom: 0;
+    margin-bottom: 6rem;
 }
 
 .formacion__section-container {
@@ -29,9 +31,9 @@
 .formacion__content {
     display: flex;
     flex-direction: column;  
-    justify-content: center;
     align-items: center;
     position: relative;
+    height: 100vh;
     gap: 1rem;
 }
 
@@ -39,10 +41,12 @@
     display: flex;
     width: 100%;
     height: 100%;
-    gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .formacion__line-v {
+    display: flex;
     width: 2px;
     height: 100%;
     background-color: var(--line-color);
@@ -64,7 +68,6 @@
 
 .formacion__containers-uteq-utez {
     display: flex;
-    justify-content: center;
     width: 100%;
 }
 
@@ -73,14 +76,13 @@
     cursor: pointer;
     background-color: var(--container-color);
     border-radius: .3rem;
-    padding: 1rem .5rem;
+    padding: 1rem;
     border: 1px solid var(--border-container-color);
     border-bottom: 2px solid var(--primary-color);
     backdrop-filter: blur(10px);
     perspective: 1000px;
     width: 100%;
-    height: 17rem;
-    max-width: 40rem;
+    height: 100%;
 }
 
 /* .formacion__card-description {
@@ -120,35 +122,15 @@
 }
 
 .logos__formacion {
-    display: flex;
-    margin: auto;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    max-width: 25rem;
 }
 
-.formacion__card-year {
-    color: var(--primary-color);
-}
 
-.formacion__card-description {
-    color: var(--text-color-light);
-    text-align: start;
-}
-
-.formacion__card-subtitle, .formacion__card-title {
-    font-family: var(--title-font);
-    text-align: center;
-}
-
-.formacion__card-description {
-    margin-top: .5rem;
-}
-
-/* Query para cuando es tablet */
+/* Query para cuando la pantalla es mayor o igual a 768 y menor a 1024 */
 @media screen and (min-width: 640px) and (max-width: 1024px) {
-    .formacion__section {
+    /* .formacion__section {
         height: 100vh;
     }
 
@@ -156,92 +138,231 @@
         font-size: 3rem;
     }
 
-    .formacion__cards {
-        padding: 1rem 2rem;        
-        max-width: 30rem;
+    .container__txt-one {
+        top: 10%;
+    }
 
-        border: 1px solid var(--border-container-color);
-        border-bottom: 2px solid var(--primary-color);
+    .container__txt-udemy {
+        top: 20%;
+        left: 50%;
     }
 
     .formacion__container-uteq {
-        justify-content: start;
+        margin-bottom: 5rem;
+        height: 40%;
     }
 
     .formacion__container-utez {
-        justify-content: end;
+        margin-bottom: 15rem;
     }
+
+    .formacion__line-v {
+        height: 80vh;
+    }
+
+    .formacion__card-utez {
+        cursor: pointer;
+        width: 80%;
+        background-color: var(--container-color);
+        border-radius: .3rem;
+        padding: 1rem;
+        border: 1px solid var(--border-container-color);
+        border-left: 2px solid var(--primary-color);
+        perspective: 1000px;
+    }
+
+    .formacion__card-uteq {
+        width: 80%;
+    } */
 }
 
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
-    /* .formacion__section {
-        height: 100vh;
-    } */
-
-    .title__shadow-formacion {
-        font-size: var(--font-title-shadow);
-    }
-
-    .formacion__content {
-        gap: 2rem;
+    /* .formacion__line-v {
+        display: flex;
+        width: 2px;
+        height: 100%;
+        background-color: var(--line-color);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
-    .formacion__section-left-right {
+    .container__txt-formacion {
+        background-color: var(--container-color);
+        padding: .5rem 1rem;
+        position: absolute;
+        transform: translateX(-50%);
+        border-radius: .3rem;
+        border: 1px solid var(--border-container-color);
+    }
+    
+    .container__txt-continuara {
+        top: 2rem;
+        left: 50%;
+    }
+    
+    .container__txt-one {
+        top: 15%;
+        left: 50%;
+    }
+    
+    .formacion__section-left {
         display: flex;
-        width: 100%;
+        justify-content: start;
+        align-items: center;
+        width: 50%;
         height: 100%;
         position: relative;
     }
-
+    
     .formacion__container-uteq {
-        justify-content: start;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 35%;
     }
-
-    .formacion__card-uteq {
-        border: 1px solid var(--border-container-color);
-        border-right: 2px solid var(--primary-color);
-    }
-
-    .formacion__card-utez {
-        border: 1px solid var(--border-container-color);
-        border-left: 2px solid var(--primary-color);
-    }
-
-    .formacion__container-utez {
-        justify-content: end;
-    }
-
-    .formacion__cards {
-        width: 40%;
-        padding: 1rem;
-    }
-
-    .formacion__line-uteq-utez {
+    
+    .formacion__line-uteq {
         display: flex;
         position: absolute;
         top: 50%;
         height: 2px;
-        width: 50%;
+        width: 100%;
         background-color: var(--primary-color);
         z-index: -10;
     }
     
-    .formacion__circle-uteq-utez {
+    
+    .formacion__circle-uteq {
         display: flex;
         position: absolute;
         top: 49%;
+        right: 0;
         width: .5rem;
         height: .5rem;
         background-color: var(--primary-color);
         border-radius: 100%;
     }
-
-    .formacion__circle-uteq {
-        right: 50%;
+    
+    .formacion__card-uteq {
+        cursor: pointer;
+        text-align: center;
+        width: 65%;
+        background-color: var(--container-color);
+        border-radius: .3rem;
+        padding: 1rem;
+        border: 1px solid var(--border-container-color);
+        border-right: 2px solid var(--primary-color);
+        backdrop-filter: blur(10px);
+        perspective: 1000px;
+    }
+    
+    .formacion__card-title,
+    .formacion__card-subtitle {
+        font-size: var(--normal-font-size);
+        font-family: var(--title-font);
+    }
+    
+    .formacion__card-year {
+        text-align: center;
+        color: var(--primary-color);
+    }
+    
+    .formacion__card-description {
+        color: var(--text-color-light);
+        text-align: start;
+    }
+    
+    .container__txt-udemy {
+        top: 65%;
+        left: 50%;
+    }
+    
+    .formacion__section-right {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .formacion__container-utez {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        width: 100%;
+        height: 35%;
+    }
+    
+    .formacion__line-utez {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        height: 2px;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: -10;
     }
     
     .formacion__circle-utez {
-        left: 50%;
+        display: flex;
+        position: absolute;
+        top: 49%;
+        left: 0;
+        width: .5rem;
+        height: .5rem;
+        background-color: var(--primary-color);
+        border-radius: 100%;
     }
+    
+    .formacion__card-utez {
+        cursor: pointer;
+        width: 65%;
+        background-color: var(--container-color);
+        border-radius: .3rem;
+        padding: 1rem;
+        border: 1px solid var(--border-container-color);
+        border-left: 2px solid var(--primary-color);
+        perspective: 1000px;
+    }
+    
+    .card__inner {
+        width: 100%;
+        height: 100%;
+        transition: transform .8s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    
+    .formacion__cards:hover .card__inner {
+        transform: rotateY(180deg);
+    }
+    
+    .card__front,
+    .card__back {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .card__back {
+        background-color: var(--container-color);
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .logos__formacion {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    } */
 }
