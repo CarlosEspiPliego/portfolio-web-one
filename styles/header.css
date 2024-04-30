@@ -1,5 +1,5 @@
 .header {
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 8rem);
     display: flex;
     padding-bottom: 4rem;
     /* background-color: rgba(240, 248, 255, 0.045); */
