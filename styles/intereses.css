@@ -1,6 +1,6 @@
 /* INTERESES SECTION */
 .intereses__section {
-    height: var(--vhmobile);
+    height: calc(100vh);
     display: flex;
     justify-content: center;
     align-items: center;
