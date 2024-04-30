@@ -5,8 +5,8 @@
 @import url('./about.css');
 @import url('./intereses.css');
 @import url('./formacion.css');
-/* 
 @import url('./skills.css');
+/* 
 @import url('./projects.css');
 @import url('./contacto.css');
 @import url('./footer.css'); 
@@ -31,10 +31,6 @@
     color: hsla(var(--second-hue), 13%, 40%, .1);
     position: absolute;
     display: flex;
-}
-
-.intereses__body {
-    
 }
 
 /* Query para cuando es tablet */
