@@ -30,7 +30,7 @@
 
 .contacto__info-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
@@ -84,10 +84,21 @@
     width: 100%;
 }
 
+/* Query para tamaño tablet */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    .contacto__info-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Query para cuando es desktop */
 @media screen and (min-width: 1024px) {
     .contacto__section {
         width: 70%;
         margin: auto;
+    }
+
+    .contacto__info-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
