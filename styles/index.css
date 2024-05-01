@@ -31,6 +31,15 @@
     display: flex;
 }
 
+.gradient__header {
+    background: radial-gradient(closest-side, rgba(28, 49, 156, .3) 0%, rgba(1, 6, 31, .1) 100%);
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
 /* Query para cuando es tablet */
 @media screen and (max-width: 768px) {
     
